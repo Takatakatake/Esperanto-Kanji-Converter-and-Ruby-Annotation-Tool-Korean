@@ -29,25 +29,26 @@ from esp_text_replacement_module import (
 # ページ設定
 st.set_page_config(page_title="Esperanto文の文字列(漢字)置換ツール", layout="wide")
 
-st.title("エスペラント文を漢字置換したり、HTML形式の訳ルビを振ったりする (拡張版)")
+# ▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼ ここからユーザーに表示する日本語を韓国語に置換 ▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼
+st.title("에스페란토 문장을 한자 치환하거나, HTML 형식의 번역 루비를 추가하는 (확장판)")
 
 st.write("---")
 
 # 1) JSONファイル (置換ルール) をロードする (デフォルト or アップロード)
 selected_option = st.radio(
-    "JSONファイルをどうしますか？ (置換用JSONファイルの読み込み)",
-    ("デフォルトを使用する", "アップロードする")
+    "JSON 파일을 어떻게 하시겠습니까? (치환용 JSON 파일 읽기)",
+    ("기본값 사용하기", "업로드하기")
 )
 
-with st.expander("**サンプルJSON(置換用JSONファイル)**"):
+with st.expander("**샘플 JSON(치환용 JSON 파일)**"):
     # サンプルファイルのパス
     json_file_path = './Appの运行に使用する各类文件/最终的な替换用リスト(列表)(合并3个JSON文件).json'
     # JSONファイルを読み込んでダウンロードボタンを生成
     with open(json_file_path, "rb") as file_json:
         btn_json = st.download_button(
-            label="サンプルJSON(置換用JSONファイル)ダウンロード",
+            label="샘플 JSON(치환용 JSON 파일) 다운로드",
             data=file_json,
-            file_name="置換用JSONファイル.json",
+            file_name="치환용 JSON 파일.json",
             mime="application/json"
         )
 
@@ -55,7 +56,7 @@ replacements_final_list: List[Tuple[str, str, str]] = []
 replacements_list_for_localized_string: List[Tuple[str, str, str]] = []
 replacements_list_for_2char: List[Tuple[str, str, str]] = []
 
-if selected_option == "デフォルトを使用する":
+if selected_option == "기본값 사용하기":
     default_json_path = "./Appの运行に使用する各类文件/最终的な替换用リスト(列表)(合并3个JSON文件).json"
     try:
         with open(default_json_path, 'r', encoding='utf-8') as f:
@@ -66,12 +67,12 @@ if selected_option == "デフォルトを使用する":
                 "局部文字替换用のリスト(列表)型配列(replacements_list_for_localized_string)", [])
             replacements_list_for_2char = combined_data.get(
                 "二文字词根替换用のリスト(列表)型配列(replacements_list_for_2char)", [])
-        st.success("デフォルトJSONの読み込みに成功しました。")
+        st.success("기본 JSON을 성공적으로 불러왔습니다.")
     except Exception as e:
-        st.error(f"JSONファイルの読み込みに失敗: {e}")
+        st.error(f"JSON 파일 로드에 실패했습니다: {e}")
         st.stop()
 else:
-    uploaded_file = st.file_uploader("JSONファイルをアップロード (合并3个JSON文件).json 形式)", type="json")
+    uploaded_file = st.file_uploader("JSON 파일 업로드(합병 3개 JSON 파일).json 형식", type="json")
     if uploaded_file is not None:
         try:
             combined_data = json.load(uploaded_file)
@@ -81,12 +82,12 @@ else:
                 "局部文字替换用のリスト(列表)型配列(replacements_list_for_localized_string)", [])
             replacements_list_for_2char = combined_data.get(
                 "二文字词根替换用のリスト(列表)型配列(replacements_list_for_2char)", [])
-            st.success("アップロードしたJSONの読み込みに成功しました。")
+            st.success("업로드한 JSON을 성공적으로 불러왔습니다.")
         except Exception as e:
-            st.error(f"アップロードJSONファイルの読み込みに失敗: {e}")
+            st.error(f"업로드 JSON 파일 로드에 실패했습니다: {e}")
             st.stop()
     else:
-        st.warning("JSONファイルがアップロードされていません。処理を停止します。")
+        st.warning("JSON 파일이 업로드되지 않았습니다. 처리를 중단합니다.")
         st.stop()
 
 # 2) placeholders (占位符) の読み込み
@@ -97,32 +98,21 @@ placeholders_for_localized_replacement: List[str] = import_placeholders(
     './Appの运行に使用する各类文件/占位符(placeholders)_@5134@-@9728@_局部文字列替换结果捕捉用.txt'
 )
 
-
 # 3) 設定パラメータ (UI) - 高度な設定
-# st.subheader("高度な設定 (並列処理)")
-# with st.expander("詳細設定を開く"):
-#     use_parallel = st.checkbox("並列処理を使う (テキストが多い場合に高速化)", value=False)
-#     num_processes = st.number_input("同時プロセス数 (CPUコア数や環境による)", min_value=1, max_value=6, value=4, step=1)
-# サイドバーに囲み枠を作る
-
 st.write("---")
 
-
-# 設定パラメータ (UI) - 高度な設定
-st.header("高度な設定 (並列処理)")
-with st.expander("並列処理についての設定を開く"):
+st.header("고급 설정 (병렬 처리)")
+with st.expander("병렬 처리에 대한 설정 열기"):
     st.write("""
-            ここでは、文字列(漢字)置換時に使用する並列処理のプロセス数を決めます。  
+            여기에서는 문자열(한자) 치환 시 사용할 병렬 처리 프로세스 수를 결정합니다.  
             """)
-    use_parallel = st.checkbox("並列処理を使う", value=False)
-    num_processes = st.number_input("同時プロセス数", min_value=2, max_value=6, value=4, step=1)
-
+    use_parallel = st.checkbox("병렬 처리를 사용하기", value=False)
+    num_processes = st.number_input("동시 프로세스 수", min_value=2, max_value=6, value=4, step=1)
 
 st.write("---")
 
-# 例: 出力形式など。必要に応じて追加カスタマイズ
 format_type = st.selectbox(
-    "出力形式を選択(置換用JSONファイルを作成したときと同じ形式を選択):",
+    "출력 형식을 선택하세요(치환용 JSON 파일 생성 시 사용한 형식과 동일하게):",
     [
         "HTML格式_Ruby文字_大小调整",
         "HTML格式_Ruby文字_大小调整_汉字替换",
@@ -134,56 +124,49 @@ format_type = st.selectbox(
     ]
 )
 
-# フォーム外で、変数 processed_text を初期化
 processed_text = ""
 
 # 4) 入力テキストのソースを選択 (アップロード or テキストエリア)
-st.subheader("入力テキストのソース")
-source_option = st.radio("入力テキストをどうしますか？", ("手動入力", "ファイルアップロード"))
+st.subheader("입력 텍스트 소스")
+source_option = st.radio("입력 텍스트를 어떻게 하시겠습니까?", ("직접 입력", "파일 업로드"))
 
 uploaded_text = ""
-if source_option == "ファイルアップロード":
-    text_file = st.file_uploader("テキストファイルをアップロード (UTF-8)", type=["txt", "csv", "md"])
+if source_option == "파일 업로드":
+    text_file = st.file_uploader("텍스트 파일 업로드 (UTF-8)", type=["txt", "csv", "md"])
     if text_file is not None:
         uploaded_text = text_file.read().decode("utf-8", errors="replace")
-        st.info("ファイルを読み込みました。")
+        st.info("파일을 불러왔습니다.")
     else:
-        st.warning("テキストファイルがアップロードされていません。手動入力に切り替えるかファイルをアップロードしてください。")
+        st.warning("텍스트 파일이 업로드되지 않았습니다. 직접 입력으로 전환하거나 파일을 업로드하세요.")
 
-# ------------------------------------------------
-# session_state を使って、ユーザーが再設定時にも
-# 入力したテキストが消えないようにする例 (あえてやるなら)
-# ------------------------------------------------
 if "text0_value" not in st.session_state:
     st.session_state["text0_value"] = ""
 
 with st.form(key='text_input_form'):
-    # ここでテキストエリアのデフォルト値を session_state から取得
-    if source_option == "手動入力":
+    if source_option == "직접 입력":
         text0 = st.text_area(
-            "エスペラントの文章を入力してください",
+            "에스페란토 문장을 입력하세요",
             height=150,
             value=st.session_state["text0_value"]
         )
     else:
-        # アップロード済みテキスト
         if not st.session_state["text0_value"] and uploaded_text:
-            # セッションステートが空なら、アップロードテキストを初期設定
             st.session_state["text0_value"] = uploaded_text
         text0 = st.text_area(
-            "エスペラントの文章(ファイル読み込み済み)",
+            "에스페란토 문장(파일에서 읽어옴)",
             value=st.session_state["text0_value"],
             height=150
         )
-    st.markdown("""「%」で前後を囲む(「%<50文字以内の文字列>%」形式)と、「%」で囲まれた部分は文字列(漢字)置換せず、元のまま保持することができます。""")
-    st.markdown("""また、「@」で前後を囲む(「@<18文字以内の文字列>@」形式)と、「@」で囲まれた部分を局所的に文字列(漢字)置換します。""")
-    letter_type = st.radio('出力文字形式', ('上付き文字', 'x 形式', '^形式'))
 
-    submit_btn = st.form_submit_button('送信')
-    cancel_btn = st.form_submit_button('キャンセル')
+    st.markdown("""'%<50문자 이내의 문자열>%' 형태로 문장의 앞뒤를 '%'로 둘러싸면, 해당 부분은 문자열(한자) 치환 없이 원본 그대로 유지됩니다.""")
+    st.markdown("""그리고 '@<18문자 이내의 문자열>@' 형태로 앞뒤를 '@'로 둘러싸면, 해당 부분만 국소적으로 문자열(한자) 치환됩니다.""")
+
+    letter_type = st.radio('출력 문자 형식', ('위 첨자 형태', 'x 형식', '^ 형식'))
+
+    submit_btn = st.form_submit_button('전송')
+    cancel_btn = st.form_submit_button('취소')
 
     if submit_btn:
-        # ユーザーが送信ボタンを押した時点で、text0 の値を session_state に保存
         st.session_state["text0_value"] = text0
 
         if use_parallel:
@@ -208,11 +191,10 @@ with st.form(key='text_input_form'):
                 format_type=format_type
             )
 
-        # letter_typeに応じて再変換
-        if letter_type == '上付き文字':
+        if letter_type == '위 첨자 형태':
             processed_text = replace_esperanto_chars(processed_text, x_to_circumflex)
             processed_text = replace_esperanto_chars(processed_text, hat_to_circumflex)
-        elif letter_type == '^形式':
+        elif letter_type == '^ 형식':
             processed_text = replace_esperanto_chars(processed_text, x_to_hat)
             processed_text = replace_esperanto_chars(processed_text, circumflex_to_hat)
 
@@ -222,29 +204,25 @@ with st.form(key='text_input_form'):
 # フォーム外の処理: 結果表示・ダウンロード
 # =========================================
 if processed_text:
-
     if "HTML" in format_type:
-        tab1, tab2 = st.tabs([ "HTMLプレビュー", "置換結果（HTML ソースコード）"])
+        tab1, tab2 = st.tabs(["HTML 미리보기", "치환 결과(HTML 소스 코드)"])
         with tab1:
-            # 実際の表示をプレビュー
             components.html(processed_text, height=500, scrolling=True)
         with tab2:
             st.text_area("", processed_text, height=300)
-        
     else:
-        tab3_list = st.tabs(["置換結果テキスト"])   
+        tab3_list = st.tabs(["치환 결과 텍스트"])
         with tab3_list[0]:
             st.text_area("", processed_text, height=300)
 
-
     download_data = processed_text.encode('utf-8')
     st.download_button(
-        label="置換結果のダウンロード",
+        label="치환 결과 다운로드",
         data=download_data,
-        file_name="置換結果.html",
+        file_name="치환 결과.html",
         mime="text/html"
     )
 
 st.write("---")
-st.title("アプリのGitHubリポジトリ")
+st.title("앱의 GitHub 리포지토리")
 st.markdown("https://github.com/Takatakatake/Esperanto-Kanji-Converter-and-Ruby-Annotation-Tool-")
