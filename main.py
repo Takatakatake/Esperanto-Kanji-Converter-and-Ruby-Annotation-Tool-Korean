@@ -111,18 +111,21 @@ with st.expander("병렬 처리에 대한 설정 열기"):
 
 st.write("---")
 
-format_type = st.selectbox(
-    "출력 형식을 선택하세요(치환용 JSON 파일 생성 시 사용한 형식과 동일하게):",
-    [
-        "HTML格式_Ruby文字_大小调整",
-        "HTML格式_Ruby文字_大小调整_汉字替换",
-        "HTML格式",
-        "HTML格式_汉字替换",
-        "括弧(号)格式",
-        "括弧(号)格式_汉字替换",
-        "替换后文字列のみ(仅)保留(简单替换)"
-    ]
-)
+# ユーザー向け選択肢（キー側を韓国語に変更 / 値側は機能維持のためそのまま）
+options = {
+    'HTML 형식＿루비 문자 크기 조정': 'HTML格式_Ruby文字_大小调整',
+    'HTML 형식＿루비 문자 크기 조정（한자 치환）': 'HTML格式_Ruby文字_大小调整_汉字替换',
+    'HTML 형식': 'HTML格式',
+    'HTML 형식（한자 치환）': 'HTML格式_汉字替换',
+    '괄호 형식': '括弧(号)格式',
+    '괄호 형식(한자 치환)': '括弧(号)格式_汉字替换',
+    '단순 치환': '替换后文字列のみ(仅)保留(简单替换)'
+}
+
+# 사용자에게 보여줄 옵션 목록 (라벨)은 위의 dict 키들을 사용
+display_options = list(options.keys())
+selected_display = st.selectbox('출력 형식을 선택하세요:', display_options)
+format_type = options[selected_display]
 
 processed_text = ""
 
