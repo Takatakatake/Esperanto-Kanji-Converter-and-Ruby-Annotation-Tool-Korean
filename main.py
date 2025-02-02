@@ -228,4 +228,5 @@ if processed_text:
 
 st.write("---")
 st.title("앱의 GitHub 리포지토리")
+st.markdown("https://github.com/Takatakatake/Esperanto-Kanji-Converter-and-Ruby-Annotation-Tool-Korean")
 st.markdown("https://github.com/Takatakatake/Esperanto-Kanji-Converter-and-Ruby-Annotation-Tool-")
