@@ -72,13 +72,30 @@ with st.expander("샘플 파일 목록(다운로드용)"):
             )
 
     st.markdown("""
-    **샘플 CSV 2(에스페란토 어근-한자 대응 리스트)**  
+    **샘플 CSV2 (에스페란토 어근 한자 대응 리스트 ＿知乎 상의 에스페란토 애호가 Mingeo씨의 한자화 제안)**  
+    이것은 에스페란토 어근과 한자를 대응시킨 CSV 파일입니다.
+    """)
+    # サンプルファイルのパス（保持原代码不变）
+    file_path0 = './Appの运行に使用する各类文件/Mingeo_san_hanziization.csv'
+    # 파일을 읽어 다운로드 버튼 생성
+    with open(file_path0, "rb") as file:
+        btn = st.download_button(
+                label="샘플 CSV2 (에스페란토 어근 한자 대응 리스트 ＿ Mingeo씨) 다운로드",
+                data=file,
+                file_name="에스페란토 어근 한자 대응 리스트＿Mingeo씨.csv",
+                mime="text/csv"
+            )
+
+
+
+    st.markdown("""
+    **샘플 CSV 3(에스페란토 어근-한자 대응 리스트)**  
     에스페란토 어근과 한자를 대응시킨 CSV 파일입니다.
     """)
     file_path0 = './Appの运行に使用する各类文件/エスペラント語根漢字対応リスト.csv'
     with open(file_path0, "rb") as file:
         btn = st.download_button(
-                label="샘플 CSV 2(에스페란토 어근-한자 대응 리스트) 다운로드",
+                label="샘플 CSV 3(에스페란토 어근-한자 대응 리스트) 다운로드",
                 data=file,
                 file_name="에스페란토 어근-한자 대응 리스트.csv",
                 mime="text/csv"
