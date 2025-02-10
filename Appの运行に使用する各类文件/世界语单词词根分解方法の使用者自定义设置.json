@@ -234,5 +234,7 @@
 ["misi", "dflt", ["o","a"]],
 ["a/j/n", "dflt", ["ne"]],
 [" ajn", "dflt", ["ne"]],
+["taj", -1, ["ne"]],
+["taj", "dflt", ["o","a"]],
 ["far/iĝ/", 87500, ["ne"]]
 ]
