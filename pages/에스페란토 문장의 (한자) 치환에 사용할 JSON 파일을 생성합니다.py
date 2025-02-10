@@ -10,21 +10,37 @@ import multiprocessing
 from io import StringIO
 import streamlit.components.v1 as components
 
+# 関数群
 from esp_text_replacement_module import (
     convert_to_circumflex,
     safe_replace,
     import_placeholders,
     apply_ruby_html_header_and_footer
 )
-
 from esp_replacement_json_make_module import (
     convert_to_circumflex,
     output_format,
     import_placeholders,
     capitalize_ruby_and_rt,
     process_chunk_for_pre_replacements,
-    parallel_build_pre_replacements_dict
+    parallel_build_pre_replacements_dict,
+    remove_redundant_ruby_if_identical
 )
+
+# 変数群
+# 基本的には动词に対してのみ活用語尾・接尾辞を追加し、置換対象の単語の文字数を増やす(置換の優先順位を上げる。)
+verb_suffix_2l={'as':'as', 'is':'is', 'os':'os', 'us':'us','at':'at','it':'it','ot':'ot', 'ad':'ad','iĝ':'iĝ','ig':'ig','ant':'ant','int':'int','ont':'ont'}
+AN=[['dietan', '/diet/an/', '/diet/an'], ['afrikan', '/afrik/an/', '/afrik/an'], ['movadan', '/mov/ad/an/', '/mov/ad/an'], ['akcian', '/akci/an/', '/akci/an'], ['montaran', '/mont/ar/an/', '/mont/ar/an'], ['amerikan', '/amerik/an/', '/amerik/an'], ['regnan', '/regn/an/', '/regn/an'], ['dezertan', '/dezert/an/', '/dezert/an'], ['asocian', '/asoci/an/', '/asoci/an'], ['insulan', '/insul/an/', '/insul/an'], ['azian', '/azi/an/', '/azi/an'], ['ŝtatan', '/ŝtat/an/', '/ŝtat/an'], ['doman', '/dom/an/', '/dom/an'], ['montan', '/mont/an/', '/mont/an'], ['familian', '/famili/an/', '/famili/an'], ['urban', '/urb/an/', '/urb/an'], ['popolan', '/popol/an/', '/popol/an'], ['dekan', '/dekan/', '/dek/an'], ['partian', '/parti/an/', '/parti/an'], ['lokan', '/lok/an/', '/lok/an'], ['ŝipan', '/ŝip/an/', '/ŝip/an'], ['eklezian', '/eklezi/an/', '/eklezi/an'], ['landan', '/land/an/', '/land/an'], ['orientan', '/orient/an/', '/orient/an'], ['lernejan', '/lern/ej/an/', '/lern/ej/an'], ['enlandan', '/en/land/an/', '/en/land/an'], ['kalkan', '/kalkan/', '/kalk/an'], ['estraran', '/estr/ar/an/', '/estr/ar/an'], ['etnan', '/etn/an/', '/etn/an'], ['eŭropan', '/eŭrop/an/', '/eŭrop/an'], ['fazan', '/fazan/', '/faz/an'], ['polican', '/polic/an/', '/polic/an'], ['socian', '/soci/an/', '/soci/an'], ['societan', '/societ/an/', '/societ/an'], ['grupan', '/grup/an/', '/grup/an'], ['ligan', '/lig/an/', '/lig/an'], ['nacian', '/naci/an/', '/naci/an'], ['koran', '/koran/', '/kor/an'], ['religian', '/religi/an/', '/religi/an'], ['kuban', '/kub/an/', '/kub/an'], ['majoran', '/major/an/', '/major/an'], ['nordan', '/nord/an/', '/nord/an'], ['paran', 'paran', '/par/an'], ['parizan', '/pariz/an/', '/pariz/an'], ['parokan', '/parok/an/', '/parok/an'], ['podian', '/podi/an/', '/podi/an'], ['rusian', '/rus/i/an/', '/rus/ian'], ['satan', '/satan/', '/sat/an'], ['sektan', '/sekt/an/', '/sekt/an'], ['senatan', '/senat/an/', '/senat/an'], ['skisman', '/skism/an/', '/skism/an'], ['sudan', 'sudan', '/sud/an'], ['utopian', '/utopi/an/', '/utopi/an'], ['vilaĝan', '/vilaĝ/an/', '/vilaĝ/an'], ['arĝentan', '/arĝent/an/', '/arĝent/an']]
+ON=[['duon', '/du/on/', '/du/on'], ['okon', '/ok/on/', '/ok/on'], ['nombron', '/nombr/on/', '/nombr/on'], ['patron', '/patron/', '/patr/on'], ['karbon', '/karbon/', '/karb/on'], ['ciklon', '/ciklon/', '/cikl/on'], ['aldon', '/al/don/', '/ald/on'], ['balon', '/balon/', '/bal/on'], ['baron', '/baron/', '/bar/on'], ['baston', '/baston/', '/bast/on'], ['magneton', '/magnet/on/', '/magnet/on'], ['beton', 'beton', '/bet/on'], ['bombon', '/bombon/', '/bomb/on'], ['breton', 'breton', '/bret/on'], ['burĝon', '/burĝon/', '/burĝ/on'], ['centon', '/cent/on/', '/cent/on'], ['milon', '/mil/on/', '/mil/on'], ['kanton', '/kanton/', '/kant/on'], ['citron', '/citron/', '/citr/on'], ['platon', 'platon', '/plat/on'], ['dekon', '/dek/on/', '/dek/on'], ['kvaron', '/kvar/on/', '/kvar/on'], ['kvinon', '/kvin/on/', '/kvin/on'], ['seson', '/ses/on/', '/ses/on'], ['trion', '/tri/on/', '/tri/on'], ['karton', '/karton/', '/kart/on'], ['foton', '/fot/on/', '/fot/on'], ['peron', '/peron/', '/per/on'], ['elektron', '/elektr/on/', '/elektr/on'], ['drakon', 'drakon', '/drak/on'], ['mondon', '/mon/don/', '/mond/on'], ['pension', '/pension/', '/pensi/on'], ['ordon', '/ordon/', '/ord/on'], ['eskadron', 'eskadron', '/eskadr/on'], ['senton', '/sen/ton/', '/sent/on'], ['eston', 'eston', '/est/on'], ['fanfaron', '/fanfaron/', '/fanfar/on'], ['feston', '/feston/', '/fest/on'], ['flegmon', 'flegmon', '/flegm/on'], ['fronton', '/fronton/', '/front/on'], ['galon', '/galon/', '/gal/on'], ['mason', '/mason/', '/mas/on'], ['helikon', 'helikon', '/helik/on'], ['kanon', '/kanon/', '/kan/on'], ['kapon', '/kapon/', '/kap/on'], ['kokon', '/kokon/', '/kok/on'], ['kolon', '/kolon/', '/kol/on'], ['komision', '/komision/', '/komisi/on'], ['salon', '/salon/', '/sal/on'], ['ponton', '/ponton/', '/pont/on'], ['koton', '/koton/', '/kot/on'], ['kripton', 'kripton', '/kript/on'], ['kupon', '/kupon/', '/kup/on'], ['lakon', 'lakon', '/lak/on'], ['ludon', '/lu/don/', '/lud/on'], ['melon', '/melon/', '/mel/on'], ['menton', '/menton/', '/ment/on'], ['milion', '/milion/', '/mili/on'], ['milionon', '/milion/on/', '/milion/on'], ['naŭon', '/naŭ/on/', '/naŭ/on'], ['violon', '/violon/', '/viol/on'], ['trombon', '/trombon/', '/tromb/on'], ['senson', '/sen/son/', '/sens/on'], ['sepon', '/sep/on/', '/sep/on'], ['skadron', 'skadron', '/skadr/on'], ['stadion', '/stadion/', '/stadi/on'], ['tetraon', 'tetraon', '/tetra/on'], ['timon', '/timon/', '/tim/on'], ['valon', 'valon', '/val/on']]
+allowed_values = {-1, "-1", "ー１", "ー1", "-１", "－１", "－1"}
+suffix_2char_roots=['ad', 'ag', 'am', 'ar', 'as', 'at', 'av', 'di', 'ec', 'eg', 'ej', 'em', 'er', 'et', 'id', 'ig', 'il', 'in', 'ir', 'is', 'it', 'lu', 'nj', 'op', 'or', 'os', 'ot', 'ov', 'pi', 'te', 'uj', 'ul', 'um', 'us', 'uz','ĝu','aĵ','iĝ','aĉ','aĝ','ŝu','eĥ']
+prefix_2char_roots=['al', 'am', 'av', 'bo', 'di', 'du', 'ek', 'el', 'en', 'fi', 'ge', 'ir', 'lu', 'ne', 'ok', 'or', 'ov', 'pi', 're', 'te', 'uz','ĝu','aĉ','aĝ','ŝu','eĥ']
+standalone_2char_roots=['al', 'ci', 'da', 'de', 'di', 'do', 'du', 'el', 'en', 'fi', 'ha', 'he', 'ho', 'ia', 'ie', 'io', 'iu', 'ja', 'je', 'ju','ke', 'la', 'li', 'mi', 'ne', 'ni', 'nu', 'ok', 'ol', 'po', 'se', 'si', 've', 'vi','ŭa','aŭ','ĉe','ĝi','ŝi','ĉu']
+# an,onはなしにする。
+imported_placeholders_for_global_replacement = import_placeholders('./Appの运行に使用する各类文件/占位符(placeholders)_$20987$-$499999$_全域替换用.txt')
+imported_placeholders_for_2char_replacement = import_placeholders('./Appの运行に使用する各类文件/占位符(placeholders)_$13246$-$19834$_二文字词根替换用.txt')# 文字列(漢字)置換時に用いる"placeholder"ファイルを予め読み込んでおく。
+imported_placeholders_for_local_replacement = import_placeholders('./Appの运行に使用する各类文件/占位符(placeholders)_@20374@-@97648@_局部文字列替换用.txt')
+
 
 # 事前に作成した Unicode_BMP全范围文字幅(宽)_Arial16.json ファイルを読み込み (内部処理のみ)
 with open("./Appの运行に使用する各类文件/Unicode_BMP全范围文字幅(宽)_Arial16.json", "r", encoding="utf-8") as fp:
@@ -62,7 +78,7 @@ with st.expander("샘플 파일 목록(다운로드용)"):
     에스페란토 어근과 한국어 번역을 한 줄씩 대응시킨 CSV 파일입니다.  
     이 형식에 맞추어 CSV를 작성하고 업로드하면 치환용 JSON 파일이 생성됩니다.
     """)
-    file_path0 = './Appの运行に使用する各类文件/韓国語訳ルビリスト_202502.csv'
+    file_path0 = './Appの运行に使用する各类文件/에스페란토 어근-한국어 번역 루비 대응 목록.csv'
     with open(file_path0, "rb") as file:
         btn = st.download_button(
                 label="샘플 CSV 1(한국어 번역 루비 리스트) 다운로드",
@@ -76,7 +92,7 @@ with st.expander("샘플 파일 목록(다운로드용)"):
     이것은 에스페란토 어근과 한자를 대응시킨 CSV 파일입니다.
     """)
     # サンプルファイルのパス（保持原代码不变）
-    file_path0 = './Appの运行に使用する各类文件/Mingeo_san_hanziization.csv'
+    file_path0 = './Appの运行に使用する各类文件/Mingeo先生版 世界语词根-汉字对应列表.csv'
     # 파일을 읽어 다운로드 버튼 생성
     with open(file_path0, "rb") as file:
         btn = st.download_button(
@@ -92,7 +108,7 @@ with st.expander("샘플 파일 목록(다운로드용)"):
     **샘플 CSV 3(에스페란토 어근-한자 대응 리스트)**  
     에스페란토 어근과 한자를 대응시킨 CSV 파일입니다.
     """)
-    file_path0 = './Appの运行に使用する各类文件/エスペラント語根漢字対応リスト.csv'
+    file_path0 = './Appの运行に使用する各类文件/世界语词根-汉字对应列表.csv'
     with open(file_path0, "rb") as file:
         btn = st.download_button(
                 label="샘플 CSV 3(에스페란토 어근-한자 대응 리스트) 다운로드",
@@ -132,16 +148,16 @@ with st.expander("샘플 파일 목록(다운로드용)"):
         )
 
     st.markdown("""
-    **샘플 Excel 1(에스페란토 어근-한국어 번역 루비 리스트)**  
+    **샘플 Excel 1(에스페란토 어근-일본어 번역 루비 대응 목록 (습득 레벨 포함))**  
     **용도**: 번역 루비를 추가할 에스페란토 어근을 커스텀하고 싶은 경우,  
     기본적으로 위의 CSV 파일을 편집하게 되는데, 그때 도움이 될
     에스페란토 어근의 학습 난이도(에스페란토-일본어 기본 사전을 기반)를 병기한 엑셀 파일입니다.
     """)
-    with open('./Appの运行に使用する各类文件/에스페란토 어근-한국어 번역 루비 리스트.xlsx', "rb") as file:
+    with open('./Appの运行に使用する各类文件/에스페란토 어근-일본어 번역 루비 대응 목록 (습득 레벨 포함).xlsx', "rb") as file:
         st.download_button(
-            label="샘플 Excel 1(에스페란토 어근-한국어 번역 루비 리스트) 다운로드",
+            label="샘플 Excel 1(에스페란토 어근-일본어 번역 루비 대응 목록 (습득 레벨 포함)) 다운로드",
             data=file,
-            file_name="에스페란토 어근-한국어 번역 루비 리스트.xlsx",
+            file_name="에스페란토 어근-일본어 번역 루비 대응 목록 (습득 레벨 포함).xlsx",
             mime="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
         )
 
@@ -183,7 +199,7 @@ st.markdown("""
 
 csv_choice = st.radio("CSV 파일을 어떻게 하시겠습니까?", ("업로드하기", "기본값 사용하기"))
 
-csv_path_default = "./Appの运行に使用する各类文件/韓国語訳ルビリスト_202502.csv"
+csv_path_default = "./Appの运行に使用する各类文件/에스페란토 어근-한국어 번역 루비 대응 목록.csv"
 CSV_data_imported = None
 
 if csv_choice == "업로드하기":
@@ -323,11 +339,10 @@ if st.button("치환용 JSON 파일 생성하기"):
         # placeholder法とは、既に置換を終えた文字列が後続の置換によって重複して置換されてしまうことを避けるために、その置換を終えた部分に一時的に無関係な文字列(placeholder)を置いておいて、
         # 全ての置換が終わった後に、改めてその'無関係な文字列(placeholder)'から'目的の置換後文字列'に変換していく手法である。
 
-        imported_placeholders = import_placeholders('./Appの运行に使用する各类文件/占位符(placeholders)_$20987$-$499999$_全域替换用.txt')
 
         temporary_replacements_list_final=[]
         for kk in range(len(temporary_replacements_list_2)):
-            temporary_replacements_list_final.append([temporary_replacements_list_2[kk][0],temporary_replacements_list_2[kk][1],imported_placeholders[kk]])
+            temporary_replacements_list_final.append([temporary_replacements_list_2[kk][0],temporary_replacements_list_2[kk][1],imported_placeholders_for_global_replacement[kk]])
 
 
         # このセルの処理が全体を通して一番時間がかかる(数十秒)
@@ -385,9 +400,6 @@ if st.button("치환용 JSON 파일 생성하기"):
             else:
                 pre_replacements_dict_2[i.replace('/', '')]=[j[0].replace("</rt></ruby>","%%%").replace('/', '').replace("%%%","</rt></ruby>"),j[1],len(i.replace('/', ''))*10000]
 
-
-        # 基本的には动词に対してのみ活用語尾・接尾辞を追加し、置換対象の単語の文字数を増やす(置換の優先順位を上げる。)
-        verb_suffix_2l={'as':'as', 'is':'is', 'os':'os', 'us':'us','at':'at','it':'it','ot':'ot', 'ad':'ad','iĝ':'iĝ','ig':'ig','ant':'ant','int':'int','ont':'ont'}
 
         verb_suffix_2l_2={}
         for original_verb_suffix,replaced_verb_suffix in verb_suffix_2l.items():
@@ -535,8 +547,6 @@ if st.button("치환용 JSON 파일 생성하기"):
                             elif j[0]+k != pre_replacements_dict_2[i+k][0]:
                                 pass
 
-        AN=[['dietan', '/diet/an/', '/diet/an'], ['afrikan', '/afrik/an/', '/afrik/an'], ['movadan', '/mov/ad/an/', '/mov/ad/an'], ['akcian', '/akci/an/', '/akci/an'], ['montaran', '/mont/ar/an/', '/mont/ar/an'], ['amerikan', '/amerik/an/', '/amerik/an'], ['regnan', '/regn/an/', '/regn/an'], ['dezertan', '/dezert/an/', '/dezert/an'], ['asocian', '/asoci/an/', '/asoci/an'], ['insulan', '/insul/an/', '/insul/an'], ['azian', '/azi/an/', '/azi/an'], ['ŝtatan', '/ŝtat/an/', '/ŝtat/an'], ['doman', '/dom/an/', '/dom/an'], ['montan', '/mont/an/', '/mont/an'], ['familian', '/famili/an/', '/famili/an'], ['urban', '/urb/an/', '/urb/an'], ['popolan', '/popol/an/', '/popol/an'], ['dekan', '/dekan/', '/dek/an'], ['partian', '/parti/an/', '/parti/an'], ['lokan', '/lok/an/', '/lok/an'], ['ŝipan', '/ŝip/an/', '/ŝip/an'], ['eklezian', '/eklezi/an/', '/eklezi/an'], ['landan', '/land/an/', '/land/an'], ['orientan', '/orient/an/', '/orient/an'], ['lernejan', '/lern/ej/an/', '/lern/ej/an'], ['enlandan', '/en/land/an/', '/en/land/an'], ['kalkan', '/kalkan/', '/kalk/an'], ['estraran', '/estr/ar/an/', '/estr/ar/an'], ['etnan', '/etn/an/', '/etn/an'], ['eŭropan', '/eŭrop/an/', '/eŭrop/an'], ['fazan', '/fazan/', '/faz/an'], ['polican', '/polic/an/', '/polic/an'], ['socian', '/soci/an/', '/soci/an'], ['societan', '/societ/an/', '/societ/an'], ['grupan', '/grup/an/', '/grup/an'], ['ligan', '/lig/an/', '/lig/an'], ['nacian', '/naci/an/', '/naci/an'], ['koran', '/koran/', '/kor/an'], ['religian', '/religi/an/', '/religi/an'], ['kuban', '/kub/an/', '/kub/an'], ['majoran', '/major/an/', '/major/an'], ['nordan', '/nord/an/', '/nord/an'], ['paran', 'paran', '/par/an'], ['parizan', '/pariz/an/', '/pariz/an'], ['parokan', '/parok/an/', '/parok/an'], ['podian', '/podi/an/', '/podi/an'], ['rusian', '/rus/i/an/', '/rus/ian'], ['satan', '/satan/', '/sat/an'], ['sektan', '/sekt/an/', '/sekt/an'], ['senatan', '/senat/an/', '/senat/an'], ['skisman', '/skism/an/', '/skism/an'], ['sudan', 'sudan', '/sud/an'], ['utopian', '/utopi/an/', '/utopi/an'], ['vilaĝan', '/vilaĝ/an/', '/vilaĝ/an'], ['arĝentan', '/arĝent/an/', '/arĝent/an']]
-        ON=[['duon', '/du/on/', '/du/on'], ['okon', '/ok/on/', '/ok/on'], ['nombron', '/nombr/on/', '/nombr/on'], ['patron', '/patron/', '/patr/on'], ['karbon', '/karbon/', '/karb/on'], ['ciklon', '/ciklon/', '/cikl/on'], ['aldon', '/al/don/', '/ald/on'], ['balon', '/balon/', '/bal/on'], ['baron', '/baron/', '/bar/on'], ['baston', '/baston/', '/bast/on'], ['magneton', '/magnet/on/', '/magnet/on'], ['beton', 'beton', '/bet/on'], ['bombon', '/bombon/', '/bomb/on'], ['breton', 'breton', '/bret/on'], ['burĝon', '/burĝon/', '/burĝ/on'], ['centon', '/cent/on/', '/cent/on'], ['milon', '/mil/on/', '/mil/on'], ['kanton', '/kanton/', '/kant/on'], ['citron', '/citron/', '/citr/on'], ['platon', 'platon', '/plat/on'], ['dekon', '/dek/on/', '/dek/on'], ['kvaron', '/kvar/on/', '/kvar/on'], ['kvinon', '/kvin/on/', '/kvin/on'], ['seson', '/ses/on/', '/ses/on'], ['trion', '/tri/on/', '/tri/on'], ['karton', '/karton/', '/kart/on'], ['foton', '/fot/on/', '/fot/on'], ['peron', '/peron/', '/per/on'], ['elektron', '/elektr/on/', '/elektr/on'], ['drakon', 'drakon', '/drak/on'], ['mondon', '/mon/don/', '/mond/on'], ['pension', '/pension/', '/pensi/on'], ['ordon', '/ordon/', '/ord/on'], ['eskadron', 'eskadron', '/eskadr/on'], ['senton', '/sen/ton/', '/sent/on'], ['eston', 'eston', '/est/on'], ['fanfaron', '/fanfaron/', '/fanfar/on'], ['feston', '/feston/', '/fest/on'], ['flegmon', 'flegmon', '/flegm/on'], ['fronton', '/fronton/', '/front/on'], ['galon', '/galon/', '/gal/on'], ['mason', '/mason/', '/mas/on'], ['helikon', 'helikon', '/helik/on'], ['kanon', '/kanon/', '/kan/on'], ['kapon', '/kapon/', '/kap/on'], ['kokon', '/kokon/', '/kok/on'], ['kolon', '/kolon/', '/kol/on'], ['komision', '/komision/', '/komisi/on'], ['salon', '/salon/', '/sal/on'], ['ponton', '/ponton/', '/pont/on'], ['koton', '/koton/', '/kot/on'], ['kripton', 'kripton', '/kript/on'], ['kupon', '/kupon/', '/kup/on'], ['lakon', 'lakon', '/lak/on'], ['ludon', '/lu/don/', '/lud/on'], ['melon', '/melon/', '/mel/on'], ['menton', '/menton/', '/ment/on'], ['milion', '/milion/', '/mili/on'], ['milionon', '/milion/on/', '/milion/on'], ['naŭon', '/naŭ/on/', '/naŭ/on'], ['violon', '/violon/', '/viol/on'], ['trombon', '/trombon/', '/tromb/on'], ['senson', '/sen/son/', '/sens/on'], ['sepon', '/sep/on/', '/sep/on'], ['skadron', 'skadron', '/skadr/on'], ['stadion', '/stadion/', '/stadi/on'], ['tetraon', 'tetraon', '/tetra/on'], ['timon', '/timon/', '/tim/on'], ['valon', 'valon', '/val/on']]
 
         for an in AN:
             if an[1].endswith("/an/"):
@@ -591,7 +601,7 @@ if st.button("치환용 JSON 파일 생성하기"):
                 pre_replacements_dict_3[i7.replace('/', '')]=[safe_replace(i7,temporary_replacements_list_final).replace("</rt></ruby>","%%%").replace('/', '').replace("%%%","</rt></ruby>"), (len(i7.replace('/', ''))-1)*10000+3000]
 
         # 外部ファイルを読み込む形式に変えた。行われている処理は全く同じ。
-        # ★一番最初だけチェックして、説明用の項目を削除する
+        # ★一番最初だけチェックして、説明用の項目を削除する。
         if len(custom_stemming_setting_list) > 0:
             if len(custom_stemming_setting_list[0]) != 3:
                 # 最初のリストの要素の数が3つでなければ、これを説明用の項目であると判断して削除する。
@@ -603,6 +613,28 @@ if st.button("치환용 JSON 파일 생성하기"):
                     esperanto_Word_before_replacement = i[0].replace('/', '')
                     if i[1]=="dflt":
                         replacement_priority_by_length=len(esperanto_Word_before_replacement)*10000
+                    elif i[1] in allowed_values:# 202502追加 置換優先順位(i[1])が-1に設定されている場合、設定されている接尾辞付きの派生形も含めて置換対象から除外する。
+                        pre_replacements_dict_3.pop(esperanto_Word_before_replacement, None)# メインのキーをpop
+                        if "ne" in i[2]:
+                            pre_replacements_dict_3.pop(esperanto_Word_before_replacement, None)
+                            i[2].remove("ne")
+                        if "verbo_s1" in i[2]:
+                            for k1 in verb_suffix_2l_2.keys():
+                                removed_E_word = esperanto_Word_before_replacement + k1
+                                pre_replacements_dict_3.pop(removed_E_word, None)
+                            i[2].remove("verbo_s1")
+                        if "verbo_s2" in i[2]:
+                            for k in ["u ", "i ", "u", "i"]:
+                                removed_E_word = esperanto_Word_before_replacement + k
+                                pre_replacements_dict_3.pop(removed_E_word, None)
+                            i[2].remove("verbo_s2")
+                        if len(i[2]) >= 1:
+                            for j in i[2]:
+                                j2 = j.replace('/', '')
+                                removed_E_word = esperanto_Word_before_replacement + j2
+                                pre_replacements_dict_3.pop(removed_E_word, None)
+                        continue
+                        
                     elif isinstance(i[1], int) or (isinstance(i[1], str) and i[1].isdigit()):  # 整数または整数に変換可能な文字列
                         replacement_priority_by_length = int(i[1])  # 文字列の場合は整数に変換
                         
@@ -627,6 +659,7 @@ if st.button("치환용 JSON 파일 생성하기"):
                         pre_replacements_dict_3[esperanto_Word_before_replacement]=[Replaced_String, replacement_priority_by_length]
                 except:
                     continue
+
 
 
         # ★一番最初だけチェックして、説明用の項目を削除する
@@ -683,7 +716,7 @@ if st.button("치환용 JSON 파일 생성하기"):
         pre_replacements_list_3=[]
         for kk in range(len(pre_replacements_list_2)):
             if len(pre_replacements_list_2[kk][0])>=3:# 3文字以上でいいのではないか(202412)  la対策として考案された。
-                pre_replacements_list_3.append([pre_replacements_list_2[kk][0],pre_replacements_list_2[kk][1],imported_placeholders[kk]])
+                pre_replacements_list_3.append([pre_replacements_list_2[kk][0],remove_redundant_ruby_if_identical(pre_replacements_list_2[kk][1]),imported_placeholders_for_global_replacement[kk]])# 202502追加(remove_redundant_ruby_if_identical) '大文字'、'小文字'、'文頭だけ大文字'の3パターンに増えてしまう直前に発動。
 
         # '大文字'、'小文字'、'文頭だけ大文字'の3パターンに対応。
         pre_replacements_list_4=[]
@@ -729,33 +762,26 @@ if st.button("치환용 JSON 파일 생성하기"):
             replacements_final_list.append((old, new, modified_placeholder))
 
 
-        suffix_2char_roots=['ad', 'ag', 'am', 'ar', 'as', 'at', 'av', 'di', 'ec', 'eg', 'ej', 'em', 'er', 'et', 'id', 'ig', 'il', 'in', 'ir', 'is', 'it', 'lu', 'nj', 'op', 'or', 'os', 'ot', 'ov', 'pi', 'te', 'uj', 'ul', 'um', 'us', 'uz','ĝu','aĵ','iĝ','aĉ','aĝ','ŝu','eĥ']
-        prefix_2char_roots=['al', 'am', 'av', 'bo', 'di', 'du', 'ek', 'el', 'en', 'fi', 'ge', 'ir', 'lu', 'ne', 'ok', 'or', 'ov', 'pi', 're', 'te', 'uz','ĝu','aĉ','aĝ','ŝu','eĥ']
-        standalone_2char_roots=['al', 'ci', 'da', 'de', 'di', 'do', 'du', 'el', 'en', 'fi', 'ha', 'he', 'ho', 'ia', 'ie', 'io', 'iu', 'ja', 'je', 'ju','ke', 'la', 'li', 'mi', 'ne', 'ni', 'nu', 'ok', 'ol', 'po', 'se', 'si', 've', 'vi','ŭa','aŭ','ĉe','ĝi','ŝi','ĉu']
-        # an,onはなしにする。
-
-        imported_placeholders_for_2char = import_placeholders('./Appの运行に使用する各类文件/占位符(placeholders)_$13246$-$19834$_二文字词根替换用.txt')# 文字列(漢字)置換時に用いる"placeholder"ファイルを予め読み込んでおく。
-
         replacements_list_for_suffix_2char_roots=[]
         for i in range(len(suffix_2char_roots)):
-            replaced_suffix = safe_replace(suffix_2char_roots[i],temporary_replacements_list_final)
-            replacements_list_for_suffix_2char_roots.append(["$"+suffix_2char_roots[i],"$"+replaced_suffix,"$"+imported_placeholders_for_2char[i]])
-            replacements_list_for_suffix_2char_roots.append(["$"+suffix_2char_roots[i].upper(),"$"+replaced_suffix.upper(),"$"+imported_placeholders_for_2char[i][:-1]+'up$'])
-            replacements_list_for_suffix_2char_roots.append(["$"+suffix_2char_roots[i].capitalize(),"$"+capitalize_ruby_and_rt(replaced_suffix),"$"+imported_placeholders_for_2char[i][:-1]+'cap$'])
+            replaced_suffix = remove_redundant_ruby_if_identical(safe_replace(suffix_2char_roots[i],temporary_replacements_list_final))# 202502追加(remove_redundant_ruby_if_identical)
+            replacements_list_for_suffix_2char_roots.append(["$"+suffix_2char_roots[i],"$"+replaced_suffix,"$"+imported_placeholders_for_2char_replacement[i]])
+            replacements_list_for_suffix_2char_roots.append(["$"+suffix_2char_roots[i].upper(),"$"+replaced_suffix.upper(),"$"+imported_placeholders_for_2char_replacement[i][:-1]+'up$'])
+            replacements_list_for_suffix_2char_roots.append(["$"+suffix_2char_roots[i].capitalize(),"$"+capitalize_ruby_and_rt(replaced_suffix),"$"+imported_placeholders_for_2char_replacement[i][:-1]+'cap$'])
 
         replacements_list_for_prefix_2char_roots=[]
         for i in range(len(prefix_2char_roots)):
-            replaced_prefix = safe_replace(prefix_2char_roots[i],temporary_replacements_list_final)
-            replacements_list_for_prefix_2char_roots.append([prefix_2char_roots[i]+"$",replaced_prefix+"$",imported_placeholders_for_2char[i+1000]+"$"])
-            replacements_list_for_prefix_2char_roots.append([prefix_2char_roots[i].upper()+"$",replaced_prefix.upper()+"$",imported_placeholders_for_2char[i+1000][:-1]+'up$'+"$"])
-            replacements_list_for_prefix_2char_roots.append([prefix_2char_roots[i].capitalize()+"$",capitalize_ruby_and_rt(replaced_prefix)+"$",imported_placeholders_for_2char[i+1000][:-1]+'cap$'+"$"])
+            replaced_prefix = remove_redundant_ruby_if_identical(safe_replace(prefix_2char_roots[i],temporary_replacements_list_final))
+            replacements_list_for_prefix_2char_roots.append([prefix_2char_roots[i]+"$",replaced_prefix+"$",imported_placeholders_for_2char_replacement[i+1000]+"$"])
+            replacements_list_for_prefix_2char_roots.append([prefix_2char_roots[i].upper()+"$",replaced_prefix.upper()+"$",imported_placeholders_for_2char_replacement[i+1000][:-1]+'up$'+"$"])
+            replacements_list_for_prefix_2char_roots.append([prefix_2char_roots[i].capitalize()+"$",capitalize_ruby_and_rt(replaced_prefix)+"$",imported_placeholders_for_2char_replacement[i+1000][:-1]+'cap$'+"$"])
 
         replacements_list_for_standalone_2char_roots=[]
         for i in range(len(standalone_2char_roots)):
-            replaced_standalone = safe_replace(standalone_2char_roots[i],temporary_replacements_list_final)
-            replacements_list_for_standalone_2char_roots.append([" "+standalone_2char_roots[i]+" "," "+replaced_standalone+" "," "+imported_placeholders_for_2char[i+2000]+" "])
-            replacements_list_for_standalone_2char_roots.append([" "+standalone_2char_roots[i].upper()+" "," "+replaced_standalone.upper()+" "," "+imported_placeholders_for_2char[i+2000][:-1]+'up$'+" "])
-            replacements_list_for_standalone_2char_roots.append([" "+standalone_2char_roots[i].capitalize()+" "," "+capitalize_ruby_and_rt(replaced_standalone)+" "," "+imported_placeholders_for_2char[i+2000][:-1]+'cap$'+" "])
+            replaced_standalone = remove_redundant_ruby_if_identical(safe_replace(standalone_2char_roots[i],temporary_replacements_list_final))
+            replacements_list_for_standalone_2char_roots.append([" "+standalone_2char_roots[i]+" "," "+replaced_standalone+" "," "+imported_placeholders_for_2char_replacement[i+2000]+" "])
+            replacements_list_for_standalone_2char_roots.append([" "+standalone_2char_roots[i].upper()+" "," "+replaced_standalone.upper()+" "," "+imported_placeholders_for_2char_replacement[i+2000][:-1]+'up$'+" "])
+            replacements_list_for_standalone_2char_roots.append([" "+standalone_2char_roots[i].capitalize()+" "," "+capitalize_ruby_and_rt(replaced_standalone)+" "," "+imported_placeholders_for_2char_replacement[i+2000][:-1]+'cap$'+" "])
 
         replacements_list_for_2char=replacements_list_for_standalone_2char_roots+replacements_list_for_suffix_2char_roots+replacements_list_for_prefix_2char_roots
 
@@ -765,16 +791,20 @@ if st.button("치환용 JSON 파일 생성하기"):
         pre_replacements_list_for_localized_string_1=[]
         for _, (E_root, hanzi_or_meaning) in CSV_data_imported.iterrows():
             if pd.notna(E_root) and pd.notna(hanzi_or_meaning) and '#' not in E_root and (E_root != '') and (hanzi_or_meaning != ''):  # 条件を満たす行のみ処理
-                pre_replacements_list_for_localized_string_1.append([E_root,output_format(E_root, hanzi_or_meaning, format_type, char_widths_dict),len(E_root)])
-                pre_replacements_list_for_localized_string_1.append([E_root.upper(),output_format(E_root.upper(), hanzi_or_meaning.upper(), format_type, char_widths_dict),len(E_root)])
-                pre_replacements_list_for_localized_string_1.append([E_root.capitalize(),output_format(E_root.capitalize(), hanzi_or_meaning.capitalize(), format_type, char_widths_dict),len(E_root)])
+                if E_root == hanzi_or_meaning:# 202502追加
+                    pre_replacements_list_for_localized_string_1.append([E_root, hanzi_or_meaning, len(E_root)])
+                    pre_replacements_list_for_localized_string_1.append([E_root.upper(), hanzi_or_meaning.upper(), len(E_root)])
+                    pre_replacements_list_for_localized_string_1.append([E_root.capitalize(), hanzi_or_meaning.capitalize(), len(E_root)])
+                else:
+                    pre_replacements_list_for_localized_string_1.append([E_root,output_format(E_root, hanzi_or_meaning, format_type, char_widths_dict),len(E_root)])
+                    pre_replacements_list_for_localized_string_1.append([E_root.upper(),output_format(E_root.upper(), hanzi_or_meaning.upper(), format_type, char_widths_dict),len(E_root)])
+                    pre_replacements_list_for_localized_string_1.append([E_root.capitalize(),output_format(E_root.capitalize(), hanzi_or_meaning.capitalize(), format_type, char_widths_dict),len(E_root)])
 
         pre_replacements_list_for_localized_string_2 = sorted(pre_replacements_list_for_localized_string_1, key=lambda x: x[2], reverse=True)
 
-        imported_placeholders = import_placeholders('./Appの运行に使用する各类文件/占位符(placeholders)_@20374@-@97648@_局部文字列替换用.txt')
         replacements_list_for_localized_string=[]
         for kk in range(len(pre_replacements_list_for_localized_string_2)):
-            replacements_list_for_localized_string.append([pre_replacements_list_for_localized_string_2[kk][0],pre_replacements_list_for_localized_string_2[kk][1],imported_placeholders[kk]])
+            replacements_list_for_localized_string.append([pre_replacements_list_for_localized_string_2[kk][0],pre_replacements_list_for_localized_string_2[kk][1],imported_placeholders_for_local_replacement[kk]])
 
 
             
