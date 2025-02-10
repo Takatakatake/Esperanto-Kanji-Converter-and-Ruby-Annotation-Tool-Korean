@@ -289,7 +289,7 @@ with st.expander("병렬 처리 설정 보기"):
             여기서는 치환용 JSON 파일을 생성할 때 사용할 병렬 처리 프로세스 수를 결정합니다.
             """)
     use_parallel = st.checkbox("병렬 처리를 사용하기", value=False)
-    num_processes = st.number_input("동시 프로세스 수", min_value=2, max_value=6, value=4, step=1)
+    num_processes = st.number_input("동시 프로세스 수", min_value=2, max_value=6, value=5, step=1)
 
 st.write("### 최종 치환용 JSON 파일 생성")
 if st.button("치환용 JSON 파일 생성하기"):
