@@ -1,7 +1,7 @@
 ###❝에스페란토 어근❞, ❝(완전히 동일한) 에스페란토 어근❞   으로 구성된 행은、대응하는 치환 후 문자열이 존재하는 경우와 동일한 우선순위를 가지지만、 실제로는 문자열(한자) 치환을 수행하지 않는 것을 의미합니다.
 에스페란토 어근##, 일본어 번역 루비##
 adiaŭ,안녕
-bis,앙코르!
+bis,앙코르
 hura,만세!
 ŭa,와!
 kia,어떤
@@ -32,36 +32,36 @@ rapid,빠른
 feliĉ,행복한
 proksim,가까운
 fru,이른
-pur,깨끗한
+pur,순수한
 sol,유일한
 ver,진실한
 cert,확실한
 nigr,검은
-varm,더운
+varm,뜨거운
 afabl,친절한
-blank,흰색의
+blank,흰
 dolĉ,단맛의
 neces,필요한
 propr,고유한
-simpl,간단한
+simpl,단순한
 dekstr,오른쪽의
 kuraĝ,용감한
 trankvil,평온한
-blu,파란
+blu,푸른
 dik,굵은
 gaj,명랑한
 hel,밝은
-kar,사랑스러운
+kar,사랑하는
 lac,피곤한
 san,건강한
 sat,배부른
-just,정의로운
-prav,정당한
+just,정의의
+prav,옳은
 pret,준비된
 util,유용한
-verd,녹색의
+verd,초록의
 apart,별개의
-atent,주의 깊은
+atent,주의깊은
 fremd,외국의
 ĝust,정확한
 komun,공통의
@@ -76,8 +76,8 @@ mol,부드러운
 pez,무거운
 sek,건조한
 brun,갈색의
-egal,동등한
-flav,노란색의
+egal,같은
+flav,노란
 griz,회색의
 kulp,유죄의
 lert,능숙한
@@ -101,7 +101,7 @@ fier,자랑스러운
 firm,견고한
 nepr,필연적
 plat,평평한
-plur,여러의
+plur,여러
 surd,귀먹은
 vigl,활발한
 fidel,충실한
@@ -110,7 +110,7 @@ matur,성숙한
 sankt,신성한
 spert,숙련된
 subit,갑작스러운
-taŭg,유용한
+taŭg,쓸모있다
 honest,정직한
 konven,적합하다
 plur,여러
@@ -121,21 +121,21 @@ delikat,섬세한
 komfort,안락한
 pacienc,참을성 있는
 special,특별한
-ĝeneral,일반의
+ĝeneral,일반적인
 konstant,불변의
-lam,절뚝거리는
+lam,절름발이
 mut,벙어리의
-nud,나체의
+nud,벌거벗은
 pal,창백한
 ruz,교활한
 van,헛된
 acid,신맛의
 glat,매끄러운
 kler,교양 있는
-krud,가공하지 않은
+krud,가공되지 않은
 mild,온화한
 abund,풍부한
-blind,맹목적인
+blind,맹인의
 blond,금발의
 ĉarm,매력적인
 etern,영원한
@@ -153,18 +153,18 @@ sincer,성실한
 evident,명백한
 oportun,편리한
 prudent,신중한
-sci/vol##,호기심 있는
+sci/vol##,sci/vol##
 diligent,근면한
-proksim/um##,대략의
+proksim/um##,proksim/um##
 ard,백열의
-avid,열망하는
+avid,갈망하는
 brav,용감한
 ebri,취한
 krut,가파른
 naiv,순진한
 nobl,고귀한
 sobr,절제하는
-humid,습기 찬
+humid,습기 있는
 ident,동일한
 komik,우스운
 kripl,불구의
@@ -173,19 +173,19 @@ moder,적당한
 sagac,영리한
 seren,맑은
 sprit,재치있는
-akurat,시간 엄수의
+akurat,정확한
 fervor,열성적인
 inklin,경향 있는
 ĵaluz,질투하는
 kapric,변덕스러운
 modern,현대의
 modest,겸손한
-nenies,아무의 …도 아닌
+nenies,아무의 것도 아닌
 normal,정상적인
 sovaĝ,야생의
 ekstrem,극단적인
 elegant,우아한
-eminent,유명한
+eminent,저명한
 komplet,완전한
 oficial,공식적인
 perfekt,완전한
@@ -197,10 +197,10 @@ amar,쓴
 imun,면역의
 real,현실의
 ties,그것의
-unik,특이한
-vant,허영의
+unik,유일한
+vant,하찮은
 virg,순결한
-aktiv,활동적인
+aktiv,활동적
 civil,시민의
 ĉies,모두의
 elast,탄력 있는
@@ -210,15 +210,15 @@ kaduk,노후한
 koket,교태부리는
 lojal,충성스러운
 malic,악의 있는
-mir/ind##,신기한
+mir/ind##,mir/ind##
 raŭk,쉰
-rigid,"굳은,단단한"
+rigid,딱딱한
 sekur,안전한
 solen,장엄한
-tener,상냥한
+tener,부드러운
 valid,유효한
 abrupt,돌연한
-absurd,비상식적
+absurd,불합리한
 aktual,현존의
 arbitr,임의의
 aŭdac,대담한
@@ -226,33 +226,33 @@ ekzakt,정확한
 furioz,격노한
 graved,임신한
 klasik,고전의
-majest,장엄한
-nervoz,신경질적인
+majest,위엄 있는
+nervoz,신경질적
 oblikv,비스듬한
 obstin,완고한
-plen/aĝ##,성인
+plen/aĝ##,plen/aĝ##
 social,사회적
 subtil,섬세한
 tragik,비극적인
 absolut,절대적인
 kontant,현금의
 popular,인기 있는
-relativ,상대적인
-sin/don##,헌신적인
+relativ,상대적
+sin/don##,sin/don##
 solidar,연대의
 vegetar,채식의
 familiar,친근한
 grandioz,웅장한
-kolektiv,집단적인
-sin/gard##,조심한
+kolektiv,집단적
+sin/gard##,sin/gard##
 kompetent,유능한
-universal,보편적인
+universal,보편적
 kvit,빚이 없는
 miop,근시의
 punc,선홍색의
-ranc,썩은 냄새의
+ranc,썩은냄새나는
 ĉast,정숙한
-ekstr,특별한
+ekstr,별도의
 masiv,육중한
 antikv,고대의
 arogant,거만한
@@ -271,9 +271,9 @@ gotik,고딕풍의
 inert,무기력한
 obtuz,둔한
 okult,신비한
-pasiv,수동적인
+pasiv,수동의
 rigor,엄격한
-stoik,스토아학파의
+stoik,스토아의
 analog,유사한
 anonim,익명의
 arkaik,고풍의
@@ -287,18 +287,18 @@ intens,강렬한
 invers,반대의
 konciz,간결한
 konkav,오목한
-mistik,신비로운
+mistik,신비한
 neŭtr,중성의
 vulgar,저속한
 akcesor,부속의
 apokrif,가짜의
 arĥaik,고풍의
-burlesk,희화한
+burlesk,희극적인
 decimal,십진법의
 diskret,신중한
-fanatik,광신적인
+fanatik,광신적
 grotesk,기괴한
-konkret,구체적인
+konkret,구체적
 kontinu,연속적인
 liberal,자유주의의
 monoton,단조로운
@@ -307,28 +307,28 @@ nominal,명의상의
 pozitiv,긍정적인
 radikal,급진적인
 skeptik,회의적인
-solvent,지불 능력 있는
+solvent,지불능력있는
 abstrakt,추상적인
 aŭtonom,자치의
 eventual,가능한
 inkluziv,포함된
-neŭtral,중립적인
-objektiv,객관적인
+neŭtral,중립의
+objektiv,객관적
 ortodoks,정통의
 primitiv,원시의
 provizor,임시의
 racional,유리의
 romantik,낭만적인
 sinoptik,일람용의
-spontane,자연스러운
+spontane,자발적인
 aŭtentik,진짜의
 definitiv,확정된
-ekskluziv,배타적인
+ekskluziv,배타적
 korelativ,상관적
 respektiv,각자의
 subjektiv,주관적인
 transitiv,타동의
-spekulativ,사변적인
+spekulativ,사변적
 impertinent,무례한
 konservativ,보수적인
 sentimental,감상적인
@@ -336,21 +336,21 @@ dek,십
 mil,천
 sep,일곱
 ses,여섯
-tri,셋
+tri,삼
 unu,하나
 cent,백
 kvar,넷
 kvin,다섯
 naŭ,구
 aŭ,또는
-nek,아니고
-sed,그러나
+nek,도 아니다
+sed,하지만
 kvankam,비록
-plus,더하기
-minus,빼기
-ĉe,…에
+plus,플러스
+minus,마이너스
+ĉe,가에
 kun,함께
-per,…으로
+per,…으로(써)
 pri,관하여
 pro,때문에
 sen,없이
@@ -359,14 +359,14 @@ sur,위에
 tra,통과하여
 apud,옆에
 krom,제외하고
-laŭ,따라서
+laŭ,따라
 post,후에
 inter,사이에
 super,위에
 trans,건너편에
 antaŭ,앞에
 ekster,밖에
-preter,곁을 지나
+preter,지나서
 kontraŭ,반대하여
 malgraŭ,불구하고
 ĝi,그것
@@ -377,10 +377,10 @@ oni,사람들
 tio,그것
 ĉio,모든 것
 nenio,아무것도
-tio ĉi##,이것
-dis,분산시키다
+tio ĉi##,tio ĉi##
+dis,분산
 mal,반대
-ĉef,주된
+ĉef,주요
 eks,전(前)
 mis,잘못된
 pra,원시
@@ -393,9 +393,9 @@ fin,끝내다
 hav,가지다
 kon,알다
 leg,읽다
-lev,들어 올리다
+lev,올리다
 met,놓다
-mov,옮기다
+mov,움직이다
 pet,부탁하다
 pov,할 수 있다
 rid,웃다
@@ -403,7 +403,7 @@ sci,알다
 sid,앉다
 ten,잡다
 ven,오다
-vid,"보다,만나다"
+vid,보다
 viv,살다
 vol,원하다
 ĝoj,기뻐하다
@@ -414,23 +414,23 @@ loĝ,살다
 mort,죽다
 okaz,발생하다
 port,운반하다
-pren,"잡다,취하다"
+pren,잡다
 sekv,따르다
 send,보내다
 star,서다
 dezir,원하다
 labor,일하다
 milit,전쟁하다
-montr,"보이다,보여주다"
+montr,보여주다
 parol,말하다
 ricev,받다
 skrib,쓰다
-ŝajn,…처럼 보이다
-vetur,타고 가다
+ŝajn,같아 보이다
+vetur,타다
 demand,질문하다
 komenc,시작하다
 kompren,이해하다
-respond,답하다
+respond,대답하다
 bat,치다
 fal,떨어지다
 kri,외치다
@@ -443,7 +443,7 @@ pas,지나가다
 reg,통치하다
 son,소리나다
 tim,무서워하다
-tir,끌다
+tir,당기다
 aŭd,듣다
 brul,타다
 dank,감사하다
@@ -465,7 +465,7 @@ sent,느끼다
 turn,돌리다
 aĉet,사다
 atend,기다리다
-bezon,필요로 하다
+bezon,필요하다
 kresk,성장하다
 manĝ,먹다
 memor,기억하다
@@ -480,9 +480,9 @@ rimark,알아차리다
 ŝanĝ,바꾸다
 vojaĝ,여행하다
 konstru,짓다
-prezent,"제출하다,소개하다"
+prezent,제출하다
 renkont,만나다
-bru,소음을 내다
+bru,소음내다
 dub,의심하다
 lav,씻다
 lud,놀다
@@ -502,7 +502,7 @@ kuir,요리하다
 kuŝ,눕다
 paŝ,걷다
 plor,울다
-romp,"깨다,부수다"
+romp,부수다
 salt,뛰다
 serv,섬기다
 tuŝ,만지다
@@ -516,32 +516,32 @@ mezur,측정하다
 opini,생각하다
 ordon,명령하다
 plend,불평하다
-ripoz,쉬다
+ripoz,휴식하다
 salut,인사하다
 sufer,고통받다
 akcept,수락하다
 forges,잊다
 kalkul,계산하다
 komerc,거래하다
-konduk,인도하다
+konduk,이끌다
 pardon,용서하다
-silent,침묵하다
-tranĉ,"자르다,베다"
+silent,조용히 하다
+tranĉ,자르다
 konsent,동의하다
-aŭskult,경청하다
+aŭskult,듣다
 ban,목욕시키다
 flu,흐르다
 kre,창조하다
 mok,조롱하다
 amuz,즐겁게 하다
 ĉes,중지하다
-efik,효과 있다
+efik,효과내다
 gard,지키다
 juĝ,재판하다
 klin,기울이다
 pend,매달리다
 puŝ,밀다
-spir,호흡하다
+spir,숨쉬다
 stud,연구하다
 ŝat,좋아하다
 tond,자르다
@@ -549,7 +549,7 @@ traf,명중하다
 ating,도달하다
 decid,결정하다
 estim,존경하다
-invit,초청하다
+invit,초대하다
 kurac,치료하다
 marŝ,행진하다
 plaĉ,마음에 들다
@@ -557,12 +557,12 @@ ripet,반복하다
 ŝlos,잠그다
 ŝtel,훔치다
 vizit,방문하다
-aranĝ,정돈하다
+aranĝ,정리하다
 ekzist,존재하다
 instru,가르치다
 intenc,의도하다
 kompat,동정하다
-prefer,더 좋아하다
+prefer,선호하다
 prepar,준비하다
 promen,산책하다
 promes,약속하다
@@ -572,13 +572,13 @@ bol,끓다
 kis,키스하다
 obe,복종하다
 paf,쏘다
-pel,재촉하다
+pel,몰다
 pik,찌르다
-pun,처벌하다
+pun,벌하다
 sav,구조하다
 tus,기침하다
-akir,"얻다,획득하다"
-apog,지탱하다
+akir,얻다
+apog,기대다
 atak,공격하다
 bala,쓸다
 blov,불다
@@ -600,7 +600,7 @@ miks,섞다
 naĝ,수영하다
 plug,갈다
 pres,인쇄하다
-soif,목마르다
+soif,갈증나다
 spez,출납하다
 ŝir,찢다
 trem,떨다
@@ -608,16 +608,16 @@ trov,발견하다
 venk,이기다
 viŝ,닦다
 volv,감다
-anonc,공표하다
-aprob,찬성하다
+anonc,알리다
+aprob,승인하다
 avert,경고하다
-merit,자격 있다
+merit,자격이 있다
 minac,위협하다
 pentr,그리다
 posed,소유하다
 preĝ,기도하다
 rifuz,거절하다
-rilat,관계되다
+rilat,관계하다
 ripar,수리하다
 skrap,긁다
 ŝerc,농담하다
@@ -632,29 +632,29 @@ konfes,고백하다
 konsci,의식하다
 kultur,재배하다
 mensog,거짓말하다
-rezult,결과로 생기다
+rezult,결과로서 생기다
 rikolt,수확하다
 streĉ,긴장시키다
 ŝovel,삽질하다
 akompan,동행하다
 aparten,속하다
-bedaŭr,유감스럽게여기다
+bedaŭr,유감스럽게
 konsist,구성되다
 organiz,조직하다
-progres,발전하다
-respekt,존경하다
-riproĉ,"꾸짖다,비난하다"
+progres,진보하다
+respekt,존경
+riproĉ,질책하다
 diferenc,다르다
 rekomend,추천하다
 korespond,서신교환하다
 enu,지루하다
-fid,신뢰하다
+fid,믿다
 ĝu,즐기다
 hak,찍다
 log,유혹하다
 pek,죄짓다
-pes,무게를 달다
-raz,면도하다
+pes,달다
+raz,면도
 dron,익사하다
 fajf,휘파람 불다
 fand,녹이다
@@ -663,17 +663,17 @@ fart,지내다
 frot,문지르다
 ĝem,신음하다
 krev,터지다
-kudr,바느질하다
+kudr,꿰매다
 mord,물다
 muel,빻다
-nutr,영양 공급하다
+nutr,먹이다
 odor,냄새나다
 rajd,타다
 solv,해결하다
 taks,평가하다
 teks,짜다
 tent,유혹하다
-urĝ,재촉하다
+urĝ,급하다
 babil,잡담하다
 detru,파괴하다
 difin,정의하다
@@ -683,7 +683,7 @@ divid,나누다
 etend,펴다
 evolu,진화하다
 forĝ,단련하다
-frand,맛보다
+frand,간식하다
 grimp,기어오르다
 hezit,주저하다
 kroĉ,걸다
@@ -693,8 +693,8 @@ ofert,제공하다
 ornam,장식하다
 petol,장난치다
 sonĝ,꿈꾸다
-stern,펼치다
-supoz,가정하다
+stern,깔다
+supoz,추측하다
 ŝirm,보호하다
 ŝpar,절약하다
 ŝtop,막다
@@ -703,8 +703,8 @@ supoz,가정하다
 toler,참다
 verŝ,붓다
 aspekt,보이다
-daŭr/ig##,계속시키다
-difekt,손상시키다
+daŭr/ig##,daŭr/ig##
+difekt,손상하다
 diskut,토론하다
 domaĝ,아까워하다
 ekscit,자극하다
@@ -717,8 +717,8 @@ prezid,사회하다
 signif,의미하다
 skulpt,조각하다
 traduk,번역하다
-ekskurs,소풍가다
-ekzamen,검사하다
+ekskurs,소풍
+ekzamen,시험하다
 komunik,전달하다
 koncern,관계되다
 konstat,확인하다
@@ -736,42 +736,42 @@ bor,뚫다
 ced,양보하다
 cit,인용하다
 lek,핥다
-rab,빼앗다
+rab,약탈하다
 rav,매혹하다
 rem,노젓다
 rev,꿈꾸다
 seg,톱질하다
 sku,흔들다
-ted,질리게하다
+ted,지루하게 하다
 teg,덮다
 abon,구독하다
-dung,고용하다
+dung,고용
 envi,부러워하다
 flar,냄새맡다
 fond,설립하다
 frit,튀기다
-friz,곱슬하게 하다
+friz,컬하다
 gest,몸짓하다
 glad,다리다
 glut,삼키다
 ĵur,맹세하다
 kned,반죽하다
 maĉ,씹다
-melk,젖을 짜다
+melk,착유하다
 migr,이동하다
 munt,조립하다
 ofer,제물로 바치다
 pent,후회하다
 pruv,증명하다
 pump,펌프질하다
-putr,썩다
+putr,부패하다
 ramp,기다
 risk,위험을 무릅쓰다
 ronk,코골다
 rost,굽다
 sven,기절하다
 ŝov,밀다
-ŝut,뿌리다
+ŝut,붓다
 tajl,재단하다
 tord,비틀다
 tren,끌다
@@ -779,8 +779,8 @@ vari,변하다
 velk,시들다
 adici,더하다
 admir,감탄하다
-admon,타이르다
-adopt,양자로 삼다
+admon,훈계하다
+adopt,입양하다
 akcel,가속하다
 atest,증명하다
 ĉerp,뜨다
@@ -791,7 +791,7 @@ flirt,펄럭이다
 hered,상속받다
 influ,영향을 주다
 kares,애무하다
-medit,묵상하다
+medit,명상하다
 naŭz,구역질나다
 osced,하품하다
 paŝt,방목하다
@@ -807,12 +807,12 @@ sufok,질식시키다
 sving,흔들다
 ŝarg,장전하다
 ŝmir,바르다
-trakt,"다루다,처리하다"
-tremp,적시다
+trakt,다루다
+tremp,담그다
 afrank,우편요금 지불
-asekur,보험 들다
+asekur,보험하다
 balanc,흔들다
-barakt,버둥거리다
+barakt,몸부림치다
 dediĉ,바치다
 deklar,선언하다
 destin,예정하다
@@ -824,7 +824,7 @@ gratul,축하하다
 ilustr,삽화를 넣다
 import,수입하다
 insist,고집하다
-instal,"설치하다,임명하다"
+instal,설치하다
 instig,부추기다
 insult,모욕하다
 komand,지휘하다
@@ -833,8 +833,8 @@ konfid,신뢰하다
 konfit,절이다
 konfuz,혼란시키다
 konkur,경쟁하다
-kritik,비평하다
-observ,"관찰하다,준수하다"
+kritik,비판하다
+observ,관찰하다
 penetr,침투하다
 perfid,배신하다
 proced,처리하다
@@ -843,39 +843,39 @@ reklam,광고하다
 rezign,포기하다
 rezist,저항하다
 rifuĝ,피난하다
-brak/um##,껴안다
+brak/um##,brak/um##
 civiliz,문명화하다
 ĉagren,괴롭히다
-de/pend##,의존
+de/pend##,de/pend##
 disting,구별하다
 eksplod,폭발하다
 garanti,보증하다
-komplez,친절히 대하다
-kondamn,유죄판결하다
+komplez,친절
+kondamn,비난하다
 konfirm,확인하다
 konjekt,추측하다
 konklud,결론짓다
 kontrol,검사하다
 konvink,설득하다
 operaci,수술하다
-plen/um##,이루다
-pretend,"주장하다,가장하다"
+plen/um##,plen/um##
+pretend,주장하다
 suspekt,의심하다
 turment,괴롭히다
 distribu,분배하다
 fanfaron,자랑하다
 kontrakt,계약하다
-mastr/um##,집안일하다
+mastr/um##,mastr/um##
 prokrast,연기하다
 administr,관리하다
-el/turn/iĝ##,피하다
-entrepren,착수하다
+el/turn/iĝ##,el/turn/iĝ##
+entrepren,시도하다
 dec,적합하다
 juk,가렵다
 lul,흔들다
 vad,도섭하다
-vag,떠돌다
-vet,내기하다
+vag,방황하다
+vet,걸다
 vom,토하다
 zum,윙윙거리다
 ador,숭배하다
@@ -889,26 +889,26 @@ bred,사육하다
 buĉ,도살하다
 ĉif,구기다
 dikt,구술하다
-dres,길들이다
+dres,조련하다
 ekip,장비하다
-est/ig##,야기하다
+est/ig##,est/ig##
 fast,단식하다
 flat,아첨하다
 flik,깁다
-fuĝ,도망가다
+fuĝ,도망치다
 fuŝ,망치다
 garn,보강하다
 grat,긁다
-hav/ig##,갖게 하다
+hav/ig##,hav/ig##
 izol,격리하다
 jung,매다
 lukt,싸우다
 muĝ,포효하다
 opon,반대하다
-palp,만지다
+palp,더듬다
 pekl,절이다
-pere,"죽다,멸망하다"
-pli/ig##,늘리다
+pere,죽다
+pli/ig##,pli/ig##
 sark,제초하다
 sekc,절단하다
 sorb,흡수하다
@@ -919,7 +919,7 @@ tajp,타자하다
 tern,재채기하다
 tikl,간질이다
 tint,딸랑거리다
-trik,編물하다
+trik,뜨다
 trud,강요하다
 vart,돌보다
 adapt,적응시키다
@@ -927,16 +927,16 @@ aplik,적용하다
 asert,단언하다
 asist,돕다
 balot,투표하다
-ĉe/est##,참석하다
-delir,정신착란하다
+ĉe/est##,ĉe/est##
+delir,헛소리하다
 depon,맡기다
-deput,대표로 보내다
+deput,대리로하다
 enket,조사하다
 eskap,탈출하다
 falĉ,베다
-flagr,너울대다
-for/est##,없다
-grinc,삐걱거리다
+flagr,펄럭이다
+for/est##,for/est##
+grinc,삐걱대다
 ignor,무시하다
 impet,돌진하다
 incit,자극하다
@@ -949,7 +949,7 @@ menci,언급하다
 modif,수정하다
 ofend,모욕하다
 rezon,추론하다
-rivel,누설하다
+rivel,드러내다
 start,출발하다
 susur,바스락거리다
 ŝpin,잣다
@@ -962,65 +962,65 @@ balbut,더듬다
 cirkul,순환하다
 deĵor,당직하다
 denunc,고발하다
-de/ten##,막다
-dev/ont/ig##,약속시키다
+de/ten##,de/ten##
+dev/ont/ig##,dev/ont/ig##
 digest,소화하다
 dispon,사용하다
 dorlot,응석받다
 eksped,발송하다
-el/don##,출판하다
+el/don##,el/don##
 establ,설립하다
 flustr,속삭이다
 grimac,찡그리다
 grumbl,투덜대다
-implik,휘감다
+implik,"휘감다, 얽히다"
 indign,분개하다
-indulg,관용하다
+indulg,용서하다
 infekt,감염시키다
 injekt,주사하다
 inspir,영감 주다
 invent,발명하다
 klopod,노력하다
 kolizi,충돌하다
-kombin,조합하다
+kombin,결합하다
 kompon,구성하다
 konsum,소비하다
 korekt,수정하다
 lubrik,윤활하다
 manovr,기동하다
 plonĝ,다이빙하다
-preleg,강연하다
+preleg,강연
 propon,제안하다
-provok,"자극하다,도발하다"
+provok,자극하다
 recenz,비평하다
 redakt,편집하다
 redukt,줄이다
 revizi,교열하다
 ŝpruc,분출하다
 aplaŭd,박수치다
-blasfem,신을 모독하다
-bon/vol##,기꺼이
-brokant,고물매매하다
+blasfem,신성모독하다
+bon/vol##,bon/vol##
+brokant,중고품 매매하다
 eksport,수출하다
 ekzekut,처형하다
-gust/um##,맛보
+gust/um##,gust/um##
 iniciat,시작하다
 kalumni,중상하다
 kompens,배상하다
-komplik,복잡하게 하다
-kontest,이의를 제기하다
+komplik,복잡하게
+kontest,이의 제기
 manipul,조작하다
-neglekt,소홀히 하다
-persist,끈질기게 하다
+neglekt,소홀히하다
+persist,고집하다
 prononc,발음하다
 prosper,번창하다
 reflekt,반사하다
-re/form##,개조하다
+re/form##,re/form##
 subtrah,빼다
 ŝancel,흔들다
-televid,텔레비전 시청
+televid,시청
 determin,결정하다
-ekspluat,"개발하다,착취하다"
+ekspluat,개발하다
 koncentr,집중하다
 mistifik,속이다
 preskrib,처방하다
@@ -1031,7 +1031,7 @@ kompromit,위태롭게 하다
 multiplik,곱하다
 propagand,선전하다
 konversaci,대화하다
-interpelaci,질의하다
+interpelaci,질의
 erp,써레질하다
 kov,품다
 lut,납땜하다
@@ -1039,40 +1039,40 @@ pep,짹짹거리다
 tan,무두질하다
 agac,짜증나게 하다
 brod,자수하다
-brog,데게 하다
+brog,데다
 ĉiz,조각하다
 edif,교화하다
 fajl,줄질하다
-krak,소리내다
+krak,탁 소리내다
 kroz,순항하다
 pist,빻다
 rasp,갈다
-rast,긁어모으다
+rast,긁다
 rigl,빗장 지르다
-rukt,트림하다
+rukt,트림
 sibl,휘파람 불다
 skiz,스케치하다
 sput,뱉다
-steb,박다
+steb,꿰매다
 stuk,미장하다
-ŝim,곰팡이나다
-torn,선반에 돌리다
+ŝim,곰팡이 슬다
+torn,선반하다
 trot,속보로 달리다
-urin,소변보다
+urin,소변
 varb,모집하다
 adult,간통하다
-afekt,가식하다
+afekt,척하다
 akuŝ,출산하다
 arest,체포
 asign,할당하다
-atenc,위해하다
+atenc,모해하다
 draŝ,탈곡하다
 drink,술 마시다
 ekzil,추방하다
 filtr,여과하다
-infuz,우리다
-kribr,체로 치다
-parad,퍼레이드하다
+infuz,우려내다
+kribr,체질하다
+parad,행진하다
 rabot,대패질하다
 rafin,정제하다
 satur,포화시키다
@@ -1089,14 +1089,14 @@ diboĉ,방탕하다
 distil,증류하다
 drapir,장식하다
 gargar,양치하다
-gravur,조각하다
+gravur,새기다
 guvern,보육하다
 ilumin,조명하다
 inokul,접종하다
 intrig,음모하다
 ĵongl,곡예하다
-kartav,목구멍으로'r'발음하다
-kontuz,타박상 입히다
+kartav,목구멍발음하다
+kontuz,멍들게 하다
 likvid,청산하다
 makler,중개하다
 plaŭd,철썩거리다
@@ -1110,35 +1110,35 @@ ferment,발효하다
 kalfatr,틈막이하다
 kolport,행상하다
 kompost,조판하다
-konspir,음모를 꾸미다
+konspir,음모하다
 konvert,개종시키다
 paraliz,마비시키다
-proklam,선언하다
+proklam,선포하다
 singult,딸꾹질하다
 ĉarpent,목수일하다
-hipokrit,위선 부리다
+hipokrit,위선하다
 intermit,간헐하다
 konstern,경악시키다
 marĉand,흥정하다
 kapitulac,항복하다
-kaŭteriz,부식시키다
+kaŭteriz,부식하다
 komentari,주석하다
 koment,주석하다
 poz,포즈 취하다
 vak,비다
 boks,권투하다
-ĝir,양도하다
+ĝir,이체하다
 kirl,휘젓다
-klak,딱딱 소리 내다
-kluk,꼬꼬울다
-knar,삐걱거리다
+klak,딱딱 소리내다
+kluk,울다
+knar,삐걱대다
 murd,살해하다
 pled,변호하다
-sond,측심하다
+sond,측정하다
 tatu,문신하다
 abdik,퇴위하다
 abort,유산하다
-agoni,임종의 고통을 느끼다
+agoni,임종 고통 느끼다
 aklam,환호하다
 amput,절단하다
 aneks,합병하다
@@ -1149,22 +1149,22 @@ impon,감명 주다
 invad,침략하다
 kaŭr,쭈그리다
 klaĉ,험담하다
-kliŝ,전기판 뜨다
+kliŝ,복제하다
 kotiz,회비 내다
 marin,절이다
 miaŭ,야옹하다
 modul,변조하다
 refut,논박하다
-rikan,냉소하다
+rikan,비웃다
 streb,노력하다
-svarm,떼지어 모이다
-ŝveb,떠 있다
+svarm,떼지어우글거리다
+ŝveb,떠돌다
 absorb,흡수하다
 akapar,매점하다
 analiz,분석하다
 asimil,동화하다
 asperg,뿌리다
-atribu,할당하다
+atribu,귀속시키다
 aŭgur,점치다
 bojkot,보이콧하다
 cenzur,검열하다
@@ -1178,11 +1178,11 @@ konker,정복하다
 korupt,매수하다
 kverel,다투다
 lament,한탄하다
-narkot,마취하다
+narkot,마취시키다
 stimul,자극하다
 strigl,빗질하다
-ŝrump,위축되다
-amortiz,감가상각하다
+ŝrump,쭈그러들다
+amortiz,상환하다
 anticip,예상하다
 apelaci,호소하다
 bankrot,파산하다
@@ -1193,40 +1193,40 @@ katekiz,교리문답하다
 koincid,일치하다
 konfisk,몰수하다
 konsekr,봉헌하다
-konsult,상의하다
+konsult,상담하다
 legitim,증명하다
 mobiliz,동원하다
 pilgrim,순례하다
-improviz,즉흥적으로 하다
-inaŭgur,개회식을 하다
+improviz,즉흥하다
+inaŭgur,개막식하다
 karambol,충돌하다
 kateĥiz,교리문답하다
 klasifik,분류하다
 kontribu,기여하다
-litograf,석판인쇄하다
+litograf,석판인쇄
 prostitu,매춘시키다
-centraliz,중앙집중하다
+centraliz,집중시키다
 stenograf,속기하다
 ekskomunik,파문하다
 karakteriz,특징짓다
 aĵ,물건
-ant,진행형 분사
+ant,~는 중인
 ebl,가능한
 iĝ,되다
-ind,가치 있는
-int,과거분사
+ind,가치
+int,완료한
 ism,주의
-ist,종사자
-obl,배수・중복
+ist,전문가
+obl,배수
 ont,미래분사
-estr,장(長)
-aĉ,불량한
-ĉj##,남성 애칭
-end,해야 하는
-ing,꽂는 것
-ajn,무엇이든지
-ĉi##,가까이
-eĉ##,조차
+estr,장
+aĉ,악질
+ĉj##,ĉj##
+end,해야 할
+ing,꽂이
+ajn,든지
+ĉi##,ĉi##
+eĉ##,eĉ##
 for,멀리
 iam,언젠가
 iom,약간
@@ -1253,34 +1253,34 @@ tiel,그렇게
 tiom,그만큼
 ĉiam,항상
 nenie,어디에도 않다
-ankaŭ,역시
+ankaŭ,또한
 neniam,결코
 baldaŭ,곧
 hieraŭ,어제
 hodiaŭ,오늘
 morgaŭ,내일
-tie ĉi##,여기서
+tie ĉi##,tie ĉi##
 almenaŭ,적어도
 ankoraŭ,아직
 preskaŭ,거의
-tiel ĉi##,이렇게
+tiel ĉi##,tiel ĉi##
 oft,자주
 ial,어떤 이유로
 iel,어떻게든
 volont,자진하여
 des,그만큼
-neniom,조금도 않다
+neniom,조금도
 ĉial,모든 이유로
-ĉiom,전량으로
-ia/foj##,때때로
-nenial,어떠한 이유도 없다
+ĉiom,전량
+ia/foj##,ia/foj##
+nenial,어떠한 이유도 없이
 neniel,결코
 parker,암기하여
-foj,회
+foj,번
 hom,사람
 jar,년
 kap,머리
-kor,"심장,마음"
+kor,심장
 lok,장소
 man,손
 nom,이름
@@ -1291,21 +1291,21 @@ voj,길
 afer,일
 amik,친구
 form,형태
-kamp,들판
+kamp,밭
 land,나라
 mond,세계
 naci,국민
-patr,아버지
+patr,부친
 temp,시간
 vort,단어
-flank,옆구리
+flank,옆면
 infan,아이
-patr/in##,어머니
+patr/in##,patr/in##
 ĉambr,방
 sinjor,신사
 akv,물
 arb,나무
-art,기술
+art,예술
 dom,집
 edz,남편
 fil,아들
@@ -1348,14 +1348,14 @@ rimed,수단
 valor,가치
 ĉeval,말
 famili,가족
-fraŭl,미혼남성
+fraŭl,총각
 person,사람
 semajn,주간
 vesper,저녁
 vizaĝ,얼굴
 fenestr,창문
 aer,공기
-aĝ,연령
+aĝ,나이
 cel,목적
 fer,철
 ide,관념
@@ -1370,13 +1370,13 @@ roz,장미
 best,동물
 bord,물가
 brak,팔
-dent,"이,치아"
+dent,"이, 치아"
 fajr,불
 fiŝ,물고기
 flor,꽃
 glas,컵
 hund,개
-korp,"몸,신체"
+korp,몸
 lakt,우유
 lign,목재
 lini,선
@@ -1392,10 +1392,10 @@ sang,피
 seĝ,의자
 spec,종류
 stat,상태
-supr,정상
+supr,위
 ŝip,배
 vitr,유리
-angul,"각,모퉁이"
+angul,각
 daŭr,지속
 dolor,통증
 gazet,잡지
@@ -1410,7 +1410,7 @@ plank,바닥
 river,강
 somer,여름
 staci,역
-strat,거리
+strat,길
 suker,설탕
 ŝton,돌
 vagon,차량
@@ -1423,7 +1423,7 @@ kolekt,수집품
 moment,순간
 plezur,기쁨
 vilaĝ,마을
-ekzempl,예시
+ekzempl,예
 ĝarden,정원
 histori,역사
 printemp,봄
@@ -1436,8 +1436,8 @@ kuz,사촌
 lag,호수
 lim,경계
 lun,달
-maj,오월
-pak,짐
+maj,5월
+pak,포장
 sak,자루
 sum,합계
 tru,구멍
@@ -1451,12 +1451,12 @@ font,원천
 fund,바닥
 genu,무릎
 gren,곡물
-grup,"집단,무리"
+grup,그룹
 herb,풀
-juli,칠월
+juli,7월
 juni,유월
 kart,카드
-klas,"계층,반,등급"
+klas,계층
 korb,바구니
 kruc,십자가
 krur,정강이
@@ -1464,7 +1464,7 @@ lang,혀
 leĝ,법
 lund,월요일
 mard,화요일
-mart,삼월
+mart,3월
 ofic,직무
 ombr,그림자
 paĝ,페이지
@@ -1494,22 +1494,22 @@ sabat,토요일
 ŝtup,단계
 teler,접시
 terur,공포
-vapor,수증기
+vapor,증기
 insekt,곤충
 januar,1월
 ĵaŭd,목요일
 kovert,봉투
 krajon,연필
-manier,방식
+manier,방법
 objekt,물체
 oktobr,시월
 plafon,천장
 region,지역
 religi,종교
 spirit,정신
-arĝent,은(銀)
+arĝent,은
 danĝer,위험
-decembr,십이월
+decembr,12월
 dimanĉ,일요일
 februar,이월
 horloĝ,시계
@@ -1523,10 +1523,10 @@ bek,부리
 fak,분야
 fum,연기
 gas,가스
-gut,방울
+gut,물방울
 jak,재킷
 kel,지하실
-kuv,큰 통
+kuv,큰통
 lip,입술
 nep,손자
 nev,조카
@@ -1536,19 +1536,19 @@ ond,파도
 ost,뼈
 par,쌍
 pom,사과
-pot,단지
+pot,항아리
 rad,바퀴
 ret,망
 sal,소금
 sap,비누
 sem,씨앗
-sud,남쪽
+sud,남
 sup,스프
-ŝu,신발
+ŝu,구두
 tas,잔
 tol,린넨
 tuk,천
-ung,손발톱
+ung,손톱
 val,계곡
 vic,열
 barb,수염
@@ -1566,9 +1566,9 @@ korn,뿔
 krim,범죄
 lamp,램프
 mebl,가구
-mien,표정
+mien,얼굴 표정
 muŝ,파리
-nord,북쪽
+nord,북
 past,반죽
 pilk,공
 pint,끝
@@ -1592,15 +1592,15 @@ frunt,이마
 haŭt,피부
 honor,명예
 insul,섬
-kajer,공책
+kajer,노트
 kamen,벽난로
 legom,채소
-liter,문자
+liter,글자
 metal,금속
 pingl,핀
 polic,경찰
 polur,광택
-premi,상품
+premi,상
 regul,규칙
 sezon,계절
 ŝanc,기회
@@ -1626,12 +1626,12 @@ spegul,거울
 ŝarĝ,짐
 ŝrank,장롱
 tualet,화장대
-ĉapitr,장(章)
+ĉapitr,장
 fromaĝ,치즈
 kondiĉ,조건
 praktik,실천
 serpent,뱀
-ŝtrump,스타킹
+ŝtrump,양말
 tegment,지붕
 telefon,전화
 industri,산업
@@ -1640,7 +1640,7 @@ okcident,서쪽
 pantalon,바지
 abi,전나무
 agl,독수리
-ber,장과(열매)
+ber,장과
 bot,장화
 bul,덩어리
 dat,날짜
@@ -1653,7 +1653,7 @@ mod,유행
 mor,풍속
 pin,소나무
 pip,파이프
-piz,완두豆
+piz,완두
 put,우물
 rel,레일
 riz,쌀
@@ -1663,7 +1663,7 @@ tem,주제
 tub,관
 tur,탑
 vat,솜
-vaz,"그릇,병"
+vaz,병
 zon,띠
 arme,군대
 bank,은행
@@ -1678,8 +1678,8 @@ epok,시대
 fask,묶음
 feri,휴일
 film,필름
-flam,"불꽃,화염"
-flos,부유물
+flam,불꽃
+flos,부유
 fojn,건초
 fulm,번개
 glob,구체
@@ -1699,7 +1699,7 @@ najl,못
 nest,둥지
 pajl,짚
 plac,광장
-plad,큰 접시
+plad,접시
 plan,계획
 poet,시인
 pugn,주먹
@@ -1715,14 +1715,14 @@ tomb,무덤
 verm,벌레
 vers,시구
 viol,제비꽃
-agord,조화
-balon,기구
+agord,조율
+balon,풍선
 bilet,표
 burĝ,부르주아
 centr,중심
 etaĝ,층
 farun,곡분
-figur,모습
+figur,모양
 frost,혹한
 gorĝ,목구멍
 grund,지반
@@ -1732,7 +1732,7 @@ humor,기분
 karot,당근
 katar,카타르
 kling,칼날
-koton,"솜,면화"
+koton,솜
 kvant,양
 lepor,산토끼
 makul,얼룩
@@ -1746,14 +1746,14 @@ pastr,성직자
 radik,뿌리
 serur,자물쇠
 solid,고체
-sonor,음향
+sonor,소리
 strek,선
 ŝvit,땀
 tabak,담배
 tabel,표
 titol,제목
 tondr,천둥
-valiz,여행가방
+valiz,가방
 ventr,배
 alumet,성냥
 aparat,장치
@@ -1768,7 +1768,7 @@ fianĉ,약혼자
 hirund,제비
 kelner,급사
 kvalit,품질
-majstr,거장
+majstr,달인
 mantel,망토
 martel,망치
 matrac,매트리스
@@ -1784,11 +1784,11 @@ stomak,위
 tapiŝ,카펫
 tritik,밀
 aventur,모험
-cigared,궐련
+cigared,담배
 distanc,거리
 embaras,당혹
 kamarad,친구
-kaserol,스튜냄비
+kaserol,냄비
 komitat,위원회
 kongres,대회
 kvadrat,정사각형
@@ -1796,7 +1796,7 @@ magazen,창고
 pasport,여권
 politik,정치
 registr,등록부
-ter/pom##,감자
+ter/pom##,ter/pom##
 akcident,사고
 aŭtobus,버스
 aŭtomat,자동장치
@@ -1806,7 +1806,7 @@ instinkt,본능
 karakter,성격
 kaŭĉuk,고무
 material,재료
-standard,기(旗)
+standard,기
 telegraf,전신기
 restoraci,레스토랑
 ark,호형
@@ -1827,7 +1827,7 @@ mam,유방
 map,지도
 min,광산
 mus,생쥐
-net,정서
+net,청서
 nod,매듭
 orf,고아
 ort,직각
@@ -1836,10 +1836,10 @@ pil,전지
 pir,배
 pup,인형
 rat,쥐
-rip,갈비뼈
-rob,예복
+rip,늑골
+rob,옷
 tip,전형
-ton,"음질,음색"
+ton,음조
 urs,곰
 var,상품
 vel,돛
@@ -1856,29 +1856,29 @@ disk,원반
 dram,연극
 drap,직물
 duŝ,샤워
-ezok,민물꼬치고기
+ezok,꼬치고기
 farb,물감
 febr,고열
 fend,틈
-foir,정기시장
+foir,시장
 fost,기둥
 frag,딸기
 fulg,그을음
 funt,파운드
 gant,장갑
 geni,천재
-glor,영예
+glor,영광
 golf,만
 hajl,우박
 hero,영웅
 kemi,화학
-kord,현(絃)
+kord,현
 kork,코르크
 krad,격자
 kran,꼭지
 kret,분필
 kriz,위기
-kron,관
+kron,왕관
 kugl,탄환
 kupr,구리
 lift,엘리베이터
@@ -1897,7 +1897,7 @@ proz,산문
 pulm,폐
 pulv,화약
 rang,지위
-revu,전문잡지
+revu,잡지
 ritm,리듬
 seks,성
 sens,감각
@@ -1907,7 +1907,7 @@ sojl,문턱
 stil,문체
 stri,줄
 ŝel,껍질
-tend,천막
+tend,텐트
 verb,동사
 verg,가지
 vert,정수리
@@ -1917,25 +1917,25 @@ vual,베일
 vulp,여우
 afiŝ,포스터
 album,앨범
-almoz,자선품
+almoz,구걸
 arane,거미
 asoci,협회
 avenu,가로수길
-aviad/il##,비행기
+aviad/il##,aviad/il##
 barel,통
 bazar,시장
 betul,자작나무
 brems,브레이크
 butik,가게
-detal,세부사항
+detal,세부
 diabl,악마
 emoci,감동
 enigm,수수께끼
 esenc,본질
 faŭk,큰 입구
-fizik,물리학
+fizik,물리
 framb,나무딸기
-grajn,곡식알
+grajn,곡물알
 ĥemi,화학
 ideal,이상
 juvel,보석
@@ -1958,7 +1958,7 @@ penik,붓
 pioĉ,곡괭이
 plumb,납
 poezi,시가
-salon,객실
+salon,살롱
 saŭc,소스
 sitel,양동이
 sklav,노예
@@ -1976,14 +1976,14 @@ trajt,특징
 trunk,줄기
 venen,독
 veŝt,조끼
-abomen,혐오감
+abomen,혐오
 anĝel,천사
 animal,동물
 apetit,식욕
 apotek,약국
 benzin,가솔린
 bicikl,자전거
-bombon,사탕
+bombon,캔디
 cement,시멘트
 ĉeriz,버찌
 desert,디저트
@@ -2002,7 +2002,7 @@ kandel,양초
 kanzon,칸초네
 kastel,성
 klient,고객
-kol/um##,칼라
+kol/um##,kol/um##
 kurten,커튼
 mandat,위임
 mister,신비
@@ -2019,9 +2019,9 @@ proces,소송
 profit,이익
 proviz,저장
 pulvor,가루
-recept,조리법
+recept,요리법
 rekord,기록
-rezerv,보류
+rezerv,예약
 signal,신호
 sistem,체계
 surfac,표면
@@ -2042,8 +2042,8 @@ elefant,코끼리
 kabinet,내각
 kapital,자본
 koncert,콘서트
-krepusk,"여명,황혼"
-kvartal,시구
+krepusk,"황혼, 여명"
+kvartal,구역
 miliard,십억
 pejzaĝ,풍경
 problem,문제
@@ -2053,7 +2053,7 @@ student,학생
 ŝraŭb,나사
 tempest,폭풍우
 traktor,트랙터
-tri/angul##,삼각형
+tri/angul##,tri/angul##
 trotuar,보도
 adjektiv,형용사
 dekoraci,장식
@@ -2073,7 +2073,7 @@ telegram,전보
 tribunal,법정
 bibliotek,도서관
 fundament,기초
-inĝenier,기술자
+inĝenier,기사
 konferenc,회의
 konscienc,양심
 literatur,문학
@@ -2081,15 +2081,15 @@ meĥanism,기계장치
 rekompenc,보상
 respublik,공화국
 sekretari,비서
-apartament,아파트먼트
+apartament,아파트
 aŭtomobil,자동차
 aŭtoritat,권위
 instrument,기구
-medikament,의약품
+medikament,약품
 temperatur,온도
 cirkonstanc,상황
 eksperiment,실험
-mal/varm/um##,감기
+mal/varm/um##,mal/varm/um##
 ajl,마늘
 akn,여드름
 aks,축
@@ -2099,18 +2099,18 @@ alg,해초
 apr,멧돼지
 azi,아시아
 bal,무도회
-bet,비트(식물)
+bet,비트
 buk,버클
 cep,양파
 cir,구두약
 dot,지참금
-eĥ,반향
+eĥ,메아리
 fab,잠두
 fac,면
 fag,너도밤나무
 fig,무화과
 gal,담즙
-gru,두루미
+gru,학
 gum,고무
 hal,홀
 jug,멍에
@@ -2122,7 +2122,7 @@ lak,락카
 lap,우엉
 lin,아마
 lot,제비
-luk,채광창
+luk,천창
 mas,덩어리
 mat,매트
 nuk,목덜미
@@ -2132,7 +2132,7 @@ pig,까치
 pus,고름
 ran,개구리
 ren,신장
-rib,구스베리
+rib,까치밥나무 열매
 rim,운(韻)
 rol,역할
 ros,이슬
@@ -2148,7 +2148,7 @@ akci,주식
 atom,원자
 aven,귀리
 bant,매듭
-bark,소형범선
+bark,바크선
 bask,자락
 bend,끈
 blok,덩어리
@@ -2163,11 +2163,11 @@ cerv,사슴
 cign,백조
 ĉel,세포
 dand,멋쟁이
-diet,식이요법
+diet,식이
 dorn,가시
 etap,단계
 etat,명세서
-feĉ,찌꺼기
+feĉ,앙금
 felt,펠트
 frak,연미복
 fraz,문장
@@ -2177,13 +2177,13 @@ gent,민족
 glav,검
 gobi,모샘치
 gram,그램
-greg,가축 무리
+greg,무리
 grip,독감
 grot,동굴
 gudr,타르
 ĝib,혹
 heĝ,울타리
-himn,찬송가
+himn,찬가
 ĥor,합창단
 kaĉ,죽
 kaĝ,새장
@@ -2192,7 +2192,7 @@ kakt,선인장
 karn,살
 karp,잉어
 kejl,쐐기
-kern,"핵,핵심"
+kern,핵
 klub,클럽
 korv,까마귀
 kosm,우주
@@ -2218,11 +2218,11 @@ palt,외투
 pane,고장
 perl,진주
 pian,피아노
-pice,전나무속 식물
+pice,전나무
 pipr,후추
 plag,재앙
 prun,자두
-pudr,분(粉)
+pudr,분
 punt,레이스
 raci,이성
 rent,임대료
@@ -2230,17 +2230,17 @@ ruin,폐허
 rust,녹
 situ,위치
 sled,썰매
-sorg,수수식물
+sorg,수수
 spik,이삭
-spur,"발자국,흔적"
+spur,발자국
 stan,주석
-sulk,이랑
+sulk,고랑
 takt,박자
 tali,허리
 tigr,호랑이
-tort,타르트
+tort,파이
 tram,전차
-trup,"단,부대"
+trup,단(團)
 vaks,왁스
 vejn,정맥
 vesp,말벌
@@ -2248,7 +2248,7 @@ vind,포대기
 zink,아연
 afrik,아프리카
 agent,대리인
-akord,일치
+akord,조화
 akrid,메뚜기
 aktor,배우
 alarm,경보
@@ -2262,7 +2262,7 @@ banan,바나나
 brand,브랜디
 bronz,청동
 buked,꽃다발
-cigar,여송연
+cigar,시가
 cikad,매미
 cinam,계피
 cindr,재
@@ -2272,18 +2272,18 @@ civit,자치시
 debet,부채
 diant,카네이션
 dogan,관세
-efekt,감명
-ekran,스크린
+efekt,효과
+ekran,화면
 emajl,에나멜
 event,사건
 fabel,동화
 fasad,정면
-fason,재단양식
+fason,재단
 fluid,유체
 fotel,안락의자
 front,정면
 funel,깔때기
-ĝerm,배종
+ĝerm,배胚
 hepat,간장
 horde,보리
 infer,지옥
@@ -2327,7 +2327,7 @@ princ,왕자
 pupil,동공
 rabat,할인
 rafan,무
-raŭp,애벌레
+raŭp,유충
 resum,요약
 rimen,가죽끈
 roman,소설
@@ -2336,7 +2336,7 @@ salik,버드나무
 satir,풍자
 sciur,다람쥐
 sekal,호밀
-sekci,부서
+sekci,부
 senat,상원
 split,조각
 spong,해면
@@ -2373,9 +2373,9 @@ bulten,회보
 cikatr,흉터
 cikoni,황새
 cirkel,컴퍼스
-daktil,대추야자 열매
+daktil,대추야자
 dialog,대화
-ego/ist##,이기주의자
+ego/ist##,ego/ist##
 eklezi,교회
 emerit,정년퇴직자
 eŭrop,유럽
@@ -2385,7 +2385,7 @@ fontan,분수
 formik,개미
 formul,서식
 fripon,사기꾼
-furaĝ,꼴
+furaĝ,사료
 galoŝ,덧신
 gvardi,친위대
 ĝemel,쌍둥이
@@ -2396,16 +2396,16 @@ hektar,헥타르
 herold,전령
 higien,위생
 impuls,충격
-insign,기장
-intest,장(腸)
-jubile,기념 축제
+insign,휘장
+intest,장
+jubile,기념제
 karton,판지
-kasked,모자(챙 달린)
+kasked,모자
 kavern,동굴
-kirurg,외과의사
+kirurg,외과의
 klimat,기후
 klinik,임상
-kolegi,단과대학
+kolegi,대학
 kolomb,비둘기
 kolumn,난
 komedi,희극
@@ -2419,7 +2419,7 @@ kunikl,집토끼
 kurent,전류
 lacert,도마뱀
 licenc,허가
-maleol,복숭아뼈
+maleol,발목
 materi,물질
 mirtel,월귤나무
 monstr,괴물
@@ -2437,7 +2437,7 @@ profet,예언자
 prolet,무산자
 pronom,대명사
 reakci,반동
-reĝim,정체
+reĝim,정치체제
 rivolu,회전
 ruband,리본
 skorpi,전갈
@@ -2445,7 +2445,7 @@ spinac,시금치
 stamen,수술
 statur,신장
 surtut,외투
-ŝakal,재칼
+ŝakal,자칼
 ŝaŭm,거품
 teknik,기술
 testud,거북이
@@ -2465,10 +2465,10 @@ alfabet,알파벳
 alumini,알루미늄
 ambasad,대사관
 anekdot,일화
-apertur,"틈,구멍"
+apertur,틈
 apostol,사도
 asemble,총회
-bagatel,사소한 일
+bagatel,사소한 것
 bakteri,박테리아
 bandaĝ,붕대
 bifstek,비프스테이크
@@ -2476,7 +2476,7 @@ budĝet,예산
 burĝon,싹
 central,중앙시설
 cirkvit,회로
-ĉar/um##,수레
+ĉar/um##,ĉar/um##
 dimensi,차원
 ekvator,적도
 element,요소
@@ -2492,7 +2492,7 @@ invalid,폐인
 kaldron,가마솥
 kaŝtan,밤
 katalog,목록
-kirurgi,외과학
+kirurgi,외과술
 kolonel,대령
 komisar,위원
 kompani,회사
@@ -2505,7 +2505,7 @@ lantern,랜턴
 latitud,위도
 medicin,의학
 mineral,광물
-minimum,최소
+minimum,최소량
 ministr,장관
 obstakl,장애물
 orkestr,오케스트라
@@ -2516,15 +2516,15 @@ paradiz,천국
 paralel,평행선
 plastik,조형술
 portret,초상화
-princip,원칙
+princip,원리
 program,프로그램
-projekt,기획
+projekt,계획
 proverb,속담
 provinc,주
 rendevu,약속
-sin/ten##,태도
+sin/ten##,sin/ten##
 situaci,상황
-stadion,스타디움
+stadion,경기장
 subjekt,주제
 teĥnik,기술
 tendenc,경향
@@ -2535,13 +2535,13 @@ traktat,조약
 trumpet,트럼펫
 uniform,제복
 vegetal,식물
-viadukt,육교
+viadukt,고가교
 volumen,부피
 zoologi,동물학
 atlantik,대서양
-avantaĝ,유리한 입장
+avantaĝ,유리한점
 bracelet,팔찌
-cirkuler,회람장
+cirkuler,회람
 dokument,문서
 federaci,연합
 generaci,세대
@@ -2553,7 +2553,7 @@ individu,개인
 kandidat,후보자
 karnaval,카니발
 kategori,범주
-komun/um##,자치체
+komun/um##,komun/um##
 krokodil,악어
 longitud,경도
 maksimum,최대
@@ -2561,13 +2561,13 @@ marmelad,마멀레이드
 monument,기념비
 paraŝut,낙하산
 pasaĝer,승객
-pland/um##,밑창
+pland/um##,pland/um##
 porcelan,도자기
 procent,퍼센트
 profesor,교수
 radiator,라디에이터
 regiment,연대
-rekt/angul##,직각
+rekt/angul##,rekt/angul##
 sandviĉ,샌드위치
 sindikat,노동조합
 singular,단수
@@ -2575,13 +2575,13 @@ specimen,견본
 spektakl,공연
 substanc,물질
 teritori,영토
-vertikal,수직선
+vertikal,수직
 ambasador,대사
 aŭstrali,호주
 centimetr,센티미터
 ekspozici,전시회
 inspektor,검사관
-kalkan/um##,굽
+kalkan/um##,kalkan/um##
 konfidenc,비밀 이야기
 lokomotiv,기관차
 matematik,수학
@@ -2591,7 +2591,7 @@ najtingal,나이팅게일
 ortografi,철자법
 parlament,국회
 proletari,프롤레타리아
-propozici,절
+propozici,명제
 psikologi,심리학
 suplement,보충
 termometr,온도계
@@ -2606,14 +2606,14 @@ leŭtenant,중위
 mediterane,지중해
 substantiv,명사
 universitat,대학
-s-ro##,씨
-s-ino##,부인
-sinjor/in##,숙녀
+s-ro##,s-ro##
+s-ino##,s-ino##
+sinjor/in##,sinjor/in##
 alk,큰사슴
 aln,오리나무
 ann,안나
 bed,묘상
-boa,보아(뱀)
+boa,보아
 buf,두꺼비
 cim,빈대
 col,인치
@@ -2626,10 +2626,10 @@ fut,피트
 gad,대구
 gam,음계
 gri,거친 곡식
-guf,수리부엉이
+guf,부엉이
 huz,철갑상어
 kan,갈대
-ken,수지목재
+ken,수지재료
 ker,하트
 kil,용골
 kuf,두건
@@ -2655,12 +2655,12 @@ rif,암초
 rod,정박소
 rot,중대
 rub,잔해
-rum,럼酒
+rum,럼주
 rus,러시아인
 seb,수지
 sel,안장
 tez,명제
-tul,얇은 망사
+tul,튈
 ulm,느릅나무
 uln,척골
 unc,온스
@@ -2674,7 +2674,7 @@ alun,명반
 amel,전분풀
 anas,오리
 angl,영국인
-aniz,아니스 열매
+aniz,아니스열매
 ankr,닻
 arĉ,활
 arde,왜가리
@@ -2684,11 +2684,11 @@ avel,개암열매
 aviz,통지
 azot,질소
 bast,인피
-bert,베르타
+bert,벨타
 blat,바퀴벌레
-bram,잉어과 식용어
-bran,밀기울
-burd,뒝벌
+bram,잉어
+bran,겨
+burd,뒤영벌
 cedr,서양삼나무
 citr,치터
 ĉam,샤무아
@@ -2696,7 +2696,7 @@ citr,치터
 dogm,교리
 drak,용
 drog,약재
-ebon,흑단재목
+ebon,흑단
 eter,에테르
 fabl,우화
 falk,매
@@ -2704,9 +2704,9 @@ fibr,섬유
 flan,플란
 flok,조각
 flut,플루트
-fraj,알 덩어리
+fraj,알
 ftiz,폐결핵
-gajl,몰식자
+gajl,오배자
 gips,석고
 glan,도토리
 glim,운모
@@ -2732,7 +2732,7 @@ konk,조가비
 kren,고추냉이
 krep,크레이프
 krop,모이주머니
-krup,크루프성 후두염
+krup,크루프
 lake,하인
 laks,설사
 legi,군단
@@ -2746,17 +2746,17 @@ lojt,모캐
 lorn,망원경
 lumb,허리
 lutr,수달
-magi,마술
-mana,마나(초자연력)
+magi,마법
+mana,마나
 mari,마리아
 mask,가면
-maŝ,"코,눈,고리"
-meĉ,등심
+maŝ,코
+meĉ,심지
 mejl,마일
 ment,박하
 merl,지빠귀
 mesi,메시아
-mili,"조,좁쌀"
+mili,조
 mirh,미르라
 mirt,도금양
 misi,사명
@@ -2773,9 +2773,9 @@ perk,농어
 pest,페스트
 petr,베드로
 pini,잣나무
-pips,조류 혓병
+pips,조류 혀병
 plik,규발병
-plot,잉어과 물고기
+plot,잉어과鱼
 popl,포플러
 pram,나룻배
 sakr,천골
@@ -2783,23 +2783,23 @@ salm,연어
 sepi,오징어
 sofi,소피아
 sorp,마가목 열매
-spat,광물
+spat,벽개성 광물
 spin,척주
 stab,참모부
-step,대초원
+step,초원
 stip,줄기
-stof,액체단위
+stof,스토프
 stup,삼부스러기
 ŝak,체스
 ŝal,숄
-ŝam,샤무가죽
+ŝam,세무革
 taft,타프타
 talp,두더지
 tetr,꿩의 일종
 tibi,경골
 tili,보리수
-tine,좀虫
-torf,이탄
+tine,좀벌레
+torf,토탄
 trab,들보
 tref,클로버
 tril,트릴
@@ -2834,12 +2834,12 @@ cejan,수레국화
 dativ,여격
 datur,독말풀
 demon,악령
-denar,데나리우스 은화
+denar,데나리우스
 deviz,좌우명
 domen,도미노
 embri,태아
 emili,에밀리아
-ermen,흰족제비
+ermen,담비
 ermit,은둔자
 facet,단면
 fazan,꿩
@@ -2848,9 +2848,9 @@ filik,양치류
 flegm,냉담
 fokus,초점
 franc,프랑스인
-frank,프랑(화폐)
-fring,되새류 새
-galon,장식끈
+frank,프랑
+fring,되새류
+galon,갤런끈
 gazel,가젤
 genot,사향고양이
 georg,게오르그
@@ -2858,7 +2858,7 @@ gitar,기타
 gland,샘
 groŝ,그로셴
 hebre,히브리인
-heder,담쟁이덩굴
+heder,담쟁이
 herez,이단
 herni,탈장
 hirud,거머리
@@ -2871,30 +2871,30 @@ jozef,요셉
 kalik,성배
 kambi,어음
 kamer,카메라
-kanab,"삼,대마"
+kanab,삼
 kanap,소파
-kapel,예배당
-kapon,거세된 수탉
-kapor,서양풍조목
-kapot,두건외투
+kapel,채플
+kapon,거세 수탉
+kapor,카포리 꽃봉오리
+kapot,보닛
 karas,붕어
 karob,캐롭
-katun,면직물
+katun,면포
 kerub,케루브
-kiras,장갑(裝甲)
-klaft,길(단위)
-kloŝ,유리덮개
+kiras,갑옷
+klaft,길이 단위
+kloŝ,덮개
 koaks,코크스
 koleg,동료
-kolon,둥근 기둥
+kolon,기둥
 komiz,점원
-komod,장롱
+komod,옷장
 konus,원뿔
 kopek,코페크
 koran,코란
 kramp,꺽쇠
 kring,크링글
-krisp,주름장식
+krisp,주름装饰
 krist,그리스도
 kupol,돔형 천장
 kvarc,석영
@@ -2911,14 +2911,14 @@ luter,루터
 medal,메달
 meriz,들버찌
 moned,갈가마귀
-morus,오디
+morus,뽕나무
 moŝt,각하
 negoc,거래
 nobel,귀족
 novic,초심자
 nuanc,뉘앙스
-oblat,약포
-okzal,수영
+oblat,오블라토
+okzal,승아
 orden,훈장
 orgen,오르간
 paĝi,시동
@@ -2927,7 +2927,7 @@ pariz,파리
 paŭl,바울
 pavim,포장재료
 pedik,이
-perĉ,농어류
+perĉ,농어
 piked,소부대
 pilol,알약
 pirit,황철광
@@ -2936,16 +2936,16 @@ piroz,속쓰림
 piŝt,피스톤
 pluŝ,우단
 poent,점수
-pokal,"잔,트로피"
+pokal,잔
 polus,극
 potas,잿물
 prujn,서리
 pudel,푸들
 pumik,부석
-punĉ,펀치(음료)
+punĉ,펀치
 putor,스컹크
 raben,랍비
-rapir,장검
+rapir,레피어
 regol,굴뚝새
 rezin,수지
 rostr,코끼리코
@@ -2956,7 +2956,7 @@ sigel,봉인
 silab,음절
 silik,규석
 silur,메기
-silvi,실비아새
+silvi,실비아
 sirop,시럽
 skabi,옴
 skadr,기병대
@@ -2972,24 +2972,24 @@ sturn,찌르레기
 ŝark,상어
 ŝelk,멜빵
 ŝild,방패
-ŝind,널판지붕
+ŝind,널빤지
 ŝlim,진흙
 taban,등에
 tavol,층
 tempi,관자놀이
 tetan,파상풍
 tetra,들꿩
-timon,조종봉
+timon,채
 topaz,황옥
 torĉ,횃불
-tromb,용솟음
+tromb,토네이도
 tulip,튤립
 ulcer,궤양
 urtik,쐐기풀
 vanil,바닐라
 vasal,가신
-velen,송아지 가죽 종이
-verst,러시아의 이정
+velen,송아지피지
+verst,베르스타
 vezir,대신
 vipur,살무사
 vokal,모음
@@ -3008,14 +3008,14 @@ bismut,비스무트
 boraks,붕사
 buljon,부용
 bulonj,불로뉴
-buŝel,부셸(계량단위)
+buŝel,부셸
 centim,상팀
 cikori,치커리
 cimbal,심벌즈
 cinabr,진사
-cipres,사향삼나무
+cipres,사이프러스
 ĉarpi,린트 천
-damask,능직천
+damask,다마스크
 delfen,돌고래
 didelf,주머니쥐
 embusk,매복
@@ -3054,15 +3054,15 @@ jasmen,재스민
 kaleŝ,마차
 kalvin,캘빈
 kamfor,장뇌
-kamlot,캠릿(모직물)
-kanajl,깡패
+kamlot,모직물
+kanajl,악당
 kanari,카나리아
 kantor,성가대원
 kanvas,캔버스
 kapsul,캡슐
 kapuĉ,두건
 kardel,방울새
-karmin,양홍색
+karmin,양홍
 karpen,소사나무
 kastor,비버
 kaviar,캐비아
@@ -3070,8 +3070,8 @@ kobalt,코발트
 kobold,요정
 kolbas,소시지
 kolibr,벌새
-kolimb,아비(새)
-kolubr,무독성 뱀
+kolimb,아비
+kolubr,뱀
 komuni,성찬식
 kontor,사무실
 kontur,윤곽
@@ -3090,13 +3090,13 @@ legend,전설
 lekant,마거리트
 lentug,주근깨
 levkoj,꽃무우
-likvor,리큐르주
+likvor,리큐르
 litani,연도
 london,런던
 magnet,자석
 makzel,턱
 mangan,망간
-markot,삽목용 가지
+markot,삽목枝
 marmor,대리석
 marmot,마르모트
 mastik,퍼티
@@ -3122,14 +3122,14 @@ parter,1층 뒷자리
 pastel,드롭스
 patent,특허
 patrol,순찰대
-pfenig,페니히 동전
+pfenig,페니히
 pistak,피스타치오
 pistol,권총
 plastr,고약
 platen,백금
 ponard,단검
 porfir,반암
-porter,흑맥주
+porter,포터맥주
 primol,앵초
 prunel,인목 열매
 purpur,자주색
@@ -3141,11 +3141,11 @@ rozari,묵주
 rubrik,제목
 safran,사프란
 sambuk,딱총나무
-sankci,비준
+sankci,제재
 sardel,절인멸치
 sceptr,왕홀
 selakt,유청
-servic,식기 세트
+servic,식기세트
 servut,농노제
 siring,라일락
 skapol,견갑골
@@ -3161,11 +3161,11 @@ sukcen,호박
 sulfur,유황
 talent,재능
 tambur,드럼
-tenden,"건,힘줄"
+tenden,힘줄
 teodor,테오도르
 termin,용어
 testik,고환
-timian,백리향속 식물
+timian,백리향
 tombak,인조금
 traĥe,기관
 tremol,사시나무
@@ -3177,7 +3177,7 @@ turnir,토너먼트
 urogal,큰뇌조
 variol,천연두
 viburn,가막살나무
-vikari,보좌신부
+vikari,대리신부
 vinagr,식초
 vizier,챙
 volupt,관능
@@ -3195,11 +3195,11 @@ biskvit,비스킷
 ĉarnir,경첩
 diamant,다이아몬드
 episkop,주교
-eŝafod,사형대
+eŝafod,처형대
 fraksen,물푸레나무
-frangol,갈매나무
-fringel,마히와
-genitiv,소유격
+frangol,털갈매나무
+fringel,검은방울새
+genitiv,속격
 henriet,헨리에타
 hidrarg,수은
 hiskiam,히요스
@@ -3229,7 +3229,7 @@ leopard,표범
 limonad,레모네이드
 lonicer,인동덩굴
 ludovik,루도비크
-lunatik,정신병자
+lunatik,몽유병자
 maroken,모로코가죽
 marŝal,원수
 meleagr,칠면조
@@ -3237,12 +3237,12 @@ membran,막
 miĥael,미가엘
 monarĥ,군주
 mustard,겨자
-negliĝ,네글리제
+negliĝ,실내복
 nikodem,니고데모
-novjork,뉴욕시
+novjork,뉴욕
 oksigen,산소
 oksikok,덩굴월귤
-parazit,기생생물
+parazit,기생충
 pasteĉ,파이
 pelikan,펠리컨
 perdrik,자고새
@@ -3263,25 +3263,25 @@ umbilik,배꼽
 univers,우주
 varsovi,바르샤바
 verdigr,녹청
-vertebr,척추뼈
+vertebr,척추
 vespert,박쥐
 vestibl,현관
-vilhelm,윌리엄
+vilhelm,윌헬름
 virtuoz,명인
 vitriol,황산염
 zingibr,생강
 akcipitr,매
 akuzativ,목적격
 argument,논증
-arĥaism,"고어,고문체"
+arĥaism,고어
 artiŝok,아티초크
-baldaken,천개
-briliant,브릴리언트 다이아몬드
+baldaken,덮개
+briliant,브릴리언트
 diplomat,외교관
 distrikt,구역
 elizabet,엘리자베스
 fragment,파편
-framason,프리메이슨단원
+framason,프리메이슨
 frugileg,떼까마귀
 hidrogen,수소
 hortulan,촉새
@@ -3302,20 +3302,20 @@ paradoks,역설
 parentez,괄호
 particip,분사
 pasament,장식끈
-pastinak,아메리카방풍
+pastinak,방풍
 pergamen,양피지
 peritone,복막
-perlamot,진주모
+perlamot,자개
 petromiz,칠성장어
 petrosel,파슬리
-ranunkol,미나리아재비속
+ranunkol,미나리아재비
 redaktor,편집자
 rezultat,결과
 rosmaren,로즈메리
 serĝent,중사
 sublimat,승홍
-taĉment,분견대
-terebint,테레빈树脂
+taĉment,부대
+terebint,테레빈
 tornistr,배낭
 zamenhof,자멘호프
 aleksandr,알렉산더
@@ -3326,10 +3326,10 @@ balustrad,난간
 deklinaci,격변화
 diplomati,외교
 ekscelenc,각하
-ekzempler,한 권
+ekzempler,한권
 entuziasm,열광
 fortepian,그랜드피아노
-galanteri,장신구류
+galanteri,장신구
 iĥtiokol,어교
 instituci,기관
 instrukci,지령
@@ -3340,7 +3340,7 @@ kondolenc,조의
 konjugaci,활용
 konjunkci,접속사
 konsonant,자음
-korporaci,사단법인
+korporaci,법인
 kvaranten,검역정선
 nominativ,주격
 pentekost,성령강림절
@@ -3380,7 +3380,7 @@ etn,민족
 faz,위상
 fon,배경
 fuk,해초
-gaz,가제
+gaz,거즈
 gem,보석
 hum,부식토
 jod,요오드
@@ -3388,18 +3388,18 @@ jud,유대인
 kep,군모
 lat,각재
 lob,엽(葉)
-mim,흉내꾼
+mim,흉내쟁이
 mit,신화
 muz,뮤즈
 nas,통발
-nav,중앙석
+nav,본당
 niz,새매
 oaz,오아시스
 opi,아편
 puf,불룩함
 raj,가오리
 ras,인종
-ref,축범부
+ref,리프
 rit,의식
 rut,운향
 sod,소다
@@ -3407,7 +3407,7 @@ tif,티푸스
 tog,토가
 viz,비자
 agat,마노
-aĝi,환전이익
+aĝi,이익
 alen,큰바늘
 ambr,용연향
 amor,큐피드
@@ -3418,12 +3418,12 @@ astr,천체
 azil,피난처
 bard,음유시인
 bomb,폭탄
-bosk,숲속의 덤불
+bosk,숲속
 brom,브롬
 bust,상반신
 cend,센트
 cidr,사과술
-cirk,원형경기장
+cirk,서커스장
 dali,달리아
 dign,품위
 duel,결투
@@ -3431,15 +3431,15 @@ duet,듀엣
 ebur,상아
 eden,에덴 동산
 egid,방패
-erik,히스속 관목
-etik,윤리학
+erik,히스
+etik,윤리
 etim,어원
 fars,소극
 fili,지부
 fisk,국고
 furi,복수의 여신
 gnom,땅 신령
-grog,그로그술
+grog,럼주
 gruz,자갈
 ĝin,진(술)
 hidr,히드라
@@ -3459,21 +3459,21 @@ kolz,유채
 kont,계좌
 krab,게
 kres,물냉이
-kupe,"칸,실"
+kupe,칸
 laik,속인
 lama,라마僧
 lanc,창
 lens,렌즈
-lord,경(귀족)
+lord,경
 malt,맥아
 mani,편집증
 medi,환경
 milv,솔개
-mitr,주교 모자
+mitr,주교모자
 moru,대구
 mosk,사향
 mumi,미라
-naft,나프타
+naft,원유
 negr,흑인
 nimb,후광
 norm,기준
@@ -3481,7 +3481,7 @@ obol,오볼
 ogiv,첨두
 orgi,난음난무
 ozon,오존
-penc,펜스(화폐)
+penc,펜스
 pleb,평민계급
 podi,단상
 polk,폴카
@@ -3489,10 +3489,10 @@ pomp,화려함
 pore,부추
 rabi,광견병
 rism,연(종이)
-romb,마름모꼴
-rubl,루블(화폐)
+romb,마름모
+rubl,루블
 sabr,사벨
-sagu,사고(녹말)
+sagu,사고
 sald,차액
 salv,일제사격
 sekt,종파
@@ -3501,8 +3501,8 @@ skem,도표
 skol,학파
 slip,메모용지
 sokl,받침대
-sold,수 동전
-sole,혀넙치
+sold,수짜리 동전
+sole,넙치
 spad,검
 ŝah,샤(왕)
 talk,활석
@@ -3519,13 +3519,13 @@ uzur,고리
 verv,정열
 vink,빙카
 visk,겨우살이
-vist,휘스트(카드놀이)
+vist,휘스트
 vizi,환영
-zuav,주아브 병사
+zuav,주아브병
 abism,심연
 adept,신봉자
 afiks,접사
-afust,포가(대포架)
+afust,포가
 agraf,호크
 akaci,아카시아
 akciz,소비세
@@ -3533,7 +3533,7 @@ aksel,겨드랑이
 albin,백피증인
 alibi,알리바이
 aline,단락
-alkov,작은 방
+alkov,벽감
 amfor,항아리
 angin,편도염
 angor,고뇌
@@ -3563,14 +3563,14 @@ bronk,기관지
 cigan,집시
 cikut,독미나리
 ĉifr,암호
-debat,토의
+debat,토론
 dekan,학장
 dilem,딜레마
 diluv,대홍수
 divan,소파
 dolar,달러
 drakm,드라크마
-dukat,금화
+dukat,듀카트(금화)
 edikt,칙령
 eklog,목가
 ekzem,습진
@@ -3580,17 +3580,17 @@ elizi,생략
 emfaz,강조
 epope,서사시
 fagot,바순
-fakir,고행자
+fakir,수행자
 fatal,숙명
 feŭd,봉토
 fiakr,마차
 fiask,실패
-final,결승전
+final,결승
 fjord,피오르드
 forum,토론장소
-fresk,프레스코화
+fresk,신선한
 furor,대유행
-galer,갤리 배
+galer,갤리船
 galop,질주
 garol,어치
 goril,고릴라
@@ -3601,26 +3601,26 @@ helic,프로펠러
 helik,달팽이
 hisop,히솝풀
 hoboj,오보에
-humer,상박골
+humer,상완골
 idiom,고유어
 idiot,백치
 ileks,호랑가시나무
 iluzi,환상
 indiga,인디고
 jalap,할라빠 뿌리
-jud/ism##,유대교
-kabal,카발라
+jud/ism##,jud/ism##
+kabal,음모
 kadet,사관생도
 kalif,칼리프
 kanon,대포
 karat,캐럿
 kazin,카지노
 kinin,키니네
-kirŝ,키르슈酒
+kirŝ,체리술
 kloak,하수구
 kobaj,기니피그
 kokon,고치
-kolik,복통
+kolik,산통
 kolos,거상
 komet,혜성
 koral,산호
@@ -3628,10 +3628,10 @@ korne,각막
 korol,화관
 kozak,코사크
 krabr,말벌
-kreol,크레올 사람
+kreol,크레올
 kript,지하성당
-kulis,무대 뒤
-kumin,커민(식물)
+kulis,배경幕
+kumin,커민
 kvast,술장식
 kvint,5도音程
 lagun,석호
@@ -3647,7 +3647,7 @@ mamut,매머드
 medol,골수
 meduz,해파리
 melas,당밀
-melis,멜리사(식물)
+melis,멜리사
 miasm,독기
 mimoz,미모사
 mitul,홍합
@@ -3659,7 +3659,7 @@ nimfe,수련
 noktu,올빼미
 nomad,유목민
 novel,소설
-nunci,교황 특사
+nunci,교황대사
 oksid,산화물
 oktav,옥타브
 oniks,줄무늬마노
@@ -3667,26 +3667,26 @@ optik,광학
 orbit,궤도
 oriol,꾀꼬리
 ovaci,환호
-pagod,불탑
+pagod,탑
 panel,패널
 panik,공황
 paraf,서명 장식
 patos,비애감
 pedal,페달
-pedel,사환
+pedel,수위
 peoni,작약
 peruk,가발
 pigme,피그미족
 pirat,해적
 pivot,피봇트
 polip,폴립
-polis,보험증권
+polis,보험증서
 pomad,포마드
 prior,수도원장
 prism,프리즘
 psalm,성가
 raket,로켓
-rebus,그림 수수께끼
+rebus,그림수수께끼
 retin,망막
 retor,수사학자
 rezed,목서초
@@ -3700,9 +3700,9 @@ saten,새틴
 seraf,세라핌
 sifon,사이펀
 sinap,겨자
-sinod,교회회의
+sinod,종교회의
 siren,사이렌
-skalp,머리 가죽
+skalp,두피
 skerc,스케르초
 skism,분열
 sonat,소나타
@@ -3711,11 +3711,11 @@ spasm,경련
 sperm,정액
 splen,우울증
 stopl,그루터기
-strof,절(詩)
+strof,절
 sutan,수단(법의)
 ŝose,차도
 ŝpat,삽
-taler,탈레르(은화)
+taler,탈러
 tanin,타닌
 tarok,타로 카드
 teism,유신론
@@ -3737,13 +3737,13 @@ viski,위스키
 zefir,산들바람
 advent,강림절
 aksiom,공리
-akvari,수조
+akvari,수족관
 algebr,대수학
 alkemi,연금술
 ambici,야망
 amulet,부적
-anagal,루리하코베
-anarki,무정부 상태
+anagal,나도개별꽃
+anarki,무정부
 anatom,해부학
 anĉov,안초비
 anemon,아네모네
@@ -3763,7 +3763,7 @@ bandit,산적
 barbar,야만인
 barier,장애물
 bateri,전지
-batist,고급 아마포
+batist,케임브릭
 bazalt,현무암
 beletr,미문학
 bilanc,대차대조표
@@ -3775,22 +3775,22 @@ blokad,봉쇄
 bordel,매음굴
 braman,브라만
 brigad,여단
-buduar,내실
-burnus,두건 겉옷
+buduar,침실
+burnus,두건옷
 celeri,셀러리
 cidoni,마르멜로 열매
 ciklon,저기압
-ciklop,외눈거인
+ciklop,사이클롭스
 dekret,법령
 depeŝ,급보
-despot,전제군주
+despot,독재자
 diabet,당뇨병
-diadem,왕관형머리띠
+diadem,왕관
 diakon,부제
 diplom,증서
 divizi,사단
 dragon,용기병
-eklips,식(蝕)
+eklips,식
 eksces,과잉
 ekstaz,황홀경
 ekvaci,방정식
@@ -3810,8 +3810,8 @@ faktor,요인
 falang,방진
 fanfar,팡파르
 feniks,불사조
-feston,꽃줄
-fetiĉ,물신
+feston,화환
+fetiĉ,주물
 fleksi,굴절
 floren,플로린 금화
 format,형식
@@ -3820,7 +3820,7 @@ fregat,프리깃함
 galant,눈꽃
 gangli,신경절
 genist,금작화
-geolog,지질학자
+geolog,지질학
 gerani,제라늄
 gigant,거인
 glazur,유약
@@ -3828,9 +3828,9 @@ glikoz,포도당
 glukoz,포도당
 gondol,곤돌라
 grafit,흑연
-gulden,길더(화폐)
+gulden,길더
 harpun,작살
-hetman,추장
+hetman,수령
 hipnot,최면
 incens,향
 indeks,색인
@@ -3839,16 +3839,16 @@ jaguar,재규어
 jezuit,예수회 수사
 ĵaket,재킷
 kadavr,시체
-kadenc,종지법
+kadenc,리듬
 kalibr,구경
 kameli,동백꽃
 kantat,칸타타
-kanton,주(州)
+kanton,주
 karbon,탄소
 karcer,감옥
 karier,직업
 kariol,이륜마차
-katedr,설교단
+katedr,강단
 kaŭci,보증금
 kazern,병영
 kokard,모표
@@ -3856,30 +3856,30 @@ kolodi,콜로디온
 koloni,식민지
 kompas,나침반
 kondor,콘도르
-konjak,꼬냑술
+konjak,꼬냑
 korife,지도자
 kornet,코넷
-korsar,사략선
+korsar,해적
 korset,코르셋
-korvet,코르벳함
+korvet,코르벳
 kotlet,커틀릿
-kursiv,이탤릭체
+kursiv,이탤릭
 laktuk,상추
 lavend,라벤더
 loteri,복권
-lucern,현등
+lucern,등잔
 maksim,금언
 malari,말라리아
-marasm,쇠약증
+marasm,쇠약
 markiz,후작
 martir,순교자
 masaĝ,마사지
 mazurk,마주르카 춤
 medium,영매
 melodi,선율
-mentor,지도자
+mentor,멘토
 merkat,시장
-mespil,서양모과
+mespil,모과
 meteor,유성
 metrik,운율학
 mikrob,미생물
@@ -3909,9 +3909,9 @@ prelud,전주곡
 premis,전제
 profan,불경자
 profil,옆모습
-prolog,프롤로그
+prolog,서언
 puding,푸딩
-pupitr,보면대
+pupitr,악보대
 pustul,농포
 rabarb,대황
 regent,섭정
@@ -3922,7 +3922,7 @@ romanc,로맨스
 rotond,원형 건물
 sandal,샌들
 santal,백단
-sarong,사롱(허리천)
+sarong,사롱
 satrap,태수
 sektor,부채꼴
 septet,칠중주
@@ -3933,21 +3933,21 @@ siluet,실루엣
 simbol,상징
 sinkop,실신
 sintez,합성
-skelet,골격
+skelet,해골
 sofist,궤변가
 spektr,스펙트럼
 spiral,나선
 sponde,장장격
 suflor,프롬프터
 sultan,술탄
-ŝalup,소형 보트
+ŝalup,보트
 ŝankr,하감
-ŝarad,문자수수께끼
+ŝarad,수수께끼
 taksus,주목
 taktik,전술
 talmud,탈무드
 tamtam,징
-tandem,2인승 자전거
+tandem,2인승
 tapiok,타피오카
 teolog,신학자
 teorem,정리
@@ -3964,8 +3964,8 @@ unison,유니슨
 uragan,폭풍
 vampir,흡혈귀
 verand,베란다
-vermut,베르무트주
-vinjet,장식 삽화
+vermut,베르무트
+vinjet,장식컷
 zigzag,지그재그
 zodiak,황도대
 admiral,제독
@@ -3974,7 +3974,7 @@ aforism,경구
 agronom,농학자
 akrobat,곡예사
 akvarel,수채화
-alegori,풍유담
+alegori,비유
 alĥemi,연금술
 almanak,달력
 ambrozi,신의 음식
@@ -3984,10 +3984,10 @@ anagram,철자바꾸기
 analogi,유추
 anapest,단단장격
 anatomi,해부학
-angelik,안젤리카 식물
-anomali,변칙
+angelik,안젤리카
+anomali,이상
 antilop,영양
-antipod,대척지점
+antipod,대척지
 antitez,대조
 apoteoz,신격화
 apozici,동격
@@ -4008,10 +4008,10 @@ bisturi,메스
 bombast,과장된 말
 botanik,식물학
 celuloz,섬유소
-ceramik,제도술
+ceramik,도기제조
 cilindr,원통
 cistern,저수지
-citadel,성채
+citadel,요새
 ĉevron,서까래
 demagog,선동가
 diagnoz,진단
@@ -4023,8 +4023,8 @@ dinamik,역학
 dinamit,다이너마이트
 dinasti,왕조
 doktrin,교리
-ekspres,급행열차
-eliksir,연금약액
+ekspres,급행
+eliksir,만병통치약
 eminenc,예하
 epiderm,표피
 epifani,주현절
@@ -4032,7 +4032,7 @@ epigraf,비문
 epigram,경구
 erudici,박식
 estetik,미학
-etim/olog##,어원학자
+etim/olog##,etim/olog##
 etiolog,병원학자
 evoluci,진화
 farmaci,약학
@@ -4044,16 +4044,16 @@ gangren,괴저
 gardeni,치자나무
 gencian,용담초
 geodezi,측지학
-geograf,지리학자
+geograf,지리학
 geologi,지질학
 geometr,기하학자
 gerundi,동명사
-gilotin,단두대
-gimnast,체육교사
+gilotin,기요틴
+gimnast,체육가
 gimnazi,중학교
-guberni,도
+guberni,주(州)
 hiacint,히아신스
-hipotek,저당권
+hipotek,저당
 hipotez,가설
 histeri,히스테리
 homonim,동음이의어
@@ -4066,25 +4066,25 @@ kanibal,식인종
 kanonik,참사회원
 kaporal,하사관
 karamel,캐러멜
-karavan,대상단체
-kartuŝ,카르투슈 장식
-katolik,가톨릭교도
-kazemat,지하포대
+karavan,대상
+kartuŝ,카르투슈
+katolik,가톨릭
+kazemat,포대
 komplot,음모
 koncesi,불하
 kontakt,접촉
-korsaĵ,상반신 부분
+korsaĵ,상반신
 kreozot,크레오소트
 kriteri,기준
-kvadril,카드리유 춤
+kvadril,카드리유
 kvestor,재무관
-letargi,혼수상태
+letargi,혼수
 liturgi,의식
 lozanĝ,마름모꼴
 lumbrik,지렁이
 mahagon,마호가니
 majolik,마욜리카 도기
-makadam,머캐덤식 포장
+makadam,포장법
 makaron,마카롱
 malakit,공작석
 mansard,다락방
@@ -4102,13 +4102,13 @@ monopol,독점
 nikotin,니코틴
 obelisk,오벨리스크
 oleandr,협죽도
-oligark,소수독재자
+oligark,과두독재자
 omnibus,합승마차
 onobrik,잠두豆
 optativ,희원법
 pacient,환자
-palinur,대하
-pamflet,소책자
+palinur,왕새우
+pamflet,풍자문서
 panoram,전경
 papirus,파피루스
 parabol,포물선
@@ -4150,9 +4150,9 @@ sinonim,동의어
 sintaks,구문론
 skandal,스캔들
 skrupul,세심함
-stearin,스테아린酸
+stearin,스테아린
 sugesti,암시
-ŝiling,실링(화폐)
+ŝiling,실링
 taburet,걸상
 tangent,탄젠트
 teokrat,신정론자
@@ -4162,8 +4162,8 @@ ultimat,최후통첩
 uvertur,서곡
 variant,이본
 vazelin,바셀린
-verdikt,판결
-veteran,노병
+verdikt,평결
+veteran,베테랑
 vokativ,호격
 abnegaci,희생
 adjutant,부관
@@ -4188,17 +4188,17 @@ atmosfer,대기
 aŭdienc,알현
 balistik,탄도학
 balzamin,봉선화
-banderol,봉띠
-barelief,얕은 양각
+banderol,띠封
+barelief,얕은양각
 batalion,대대
 bazilisk,바실리스크
 biografi,전기
 ceremoni,의식
 dekadenc,쇠퇴
 delegaci,대표단
-demagogi,데마
+demagogi,선동
 demokrat,민주주의자
-diafragm,횡격막
+diafragm,횡경막
 diagonal,대각선
 diapazon,음차
 didaktik,교수법
@@ -4208,23 +4208,23 @@ disĉipl,제자
 dispepsi,소화불량
 ditiramb,찬가
 dromedar,단봉낙타
-ekstrakt,발췌문
+ekstrakt,추출물
 epilepsi,간질
 erizipel,단독
-etimologi##,어원학
+etimologi##,etimologi##
 etiologi,병원학
 etnograf,민족지학자
 evangeli,복음서
-faksimil,팩스
+faksimil,팩시밀리
 fakultat,학부
 felieton,연재란
-feminism,여권주의
+feminism,페미니즘
 feminist,페미니스트
 filologi,문헌학
 filozofi,철학
 fiziolog,생리학자
 fonograf,유성기
-galantin,갤런틴 요리
+galantin,갤런틴
 garnitur,장신구 세트
 garnizon,수비대
 genealog,계보학자
@@ -4237,14 +4237,14 @@ gutaperk,구타페르카
 halebard,미늘창
 harmonik,하모니카
 hegemoni,주도권
-hekatomb,백 마리 제물
+hekatomb,대학살
 hierarki,계급제도
 hipodrom,경마장
 honorari,사례금
-horoskop,점성술표
+horoskop,점성술
 hortensi,수국
-ĥirurgi,외과술
-idiotism,관용어법
+ĥirurgi,외과학
+idiotism,관용어
 imperial,지붕좌석
 indiĝen,토착민
 inkognit,익명 여행자
@@ -4271,19 +4271,19 @@ laŭreat,수상자
 logaritm,로그
 logogrif,글자수수께끼
 makaroni,마카로니
-mandaren,고관
+mandaren,관료
 mandolin,만돌린
 manifest,선언
 manometr,압력계
 margarin,마가린
 marionet,꼭두각시
 maŭzole,묘소
-mekanism,기계장치
+mekanism,기구
 melodram,멜로드라마
 meridian,자오선
 metronom,메트로놈
 metropol,중심도시
-mikrofon,마이크로폰
+mikrofon,마이크
 miniatur,세밀화
 monogram,모노그램
 monomani,편집광
@@ -4294,15 +4294,15 @@ nekrolog,부고
 nepotism,족벌주의
 nihilism,허무주의
 nihilist,허무주의자
-nostalgi,향수(鄕愁)
-numismat,고전학자
+nostalgi,향수
+numismat,화폐학자
 obligaci,채권
-oligarĥ,과두독재자
+oligarĥ,과두자
 oligarki,과두정치
 optimism,낙관주의
 optimist,낙관자
 organism,유기체
-orografi,산악지
+orografi,산악학
 pacifism,평화주의
 pacifist,평화주의자
 palanken,가마
@@ -4313,16 +4313,16 @@ paradigm,어형변화표
 parafraz,의역
 paragraf,절
 partitur,총보
-patologi,병리학
+patologi,병리
 pedagogi,교육학
 perimetr,둘레
 peristil,주랑
 pesimism,비관주의
-pesimist,비관주의자
+pesimist,비관론자
 pleonasm,중복법
 poliglot,다국어 구사자
-preterit,과거 시제
-procedur,소송 절차
+preterit,과거
+procedur,절차
 projekci,영사
 proporci,비율
 prospekt,설명서
@@ -4335,11 +4335,11 @@ renesanc,르네상스
 reputaci,평판
 revelaci,계시
 revolver,리볼버
-rojalist,왕당원
+rojalist,왕당파
 sacerdot,사제
 sakristi,성구실
 sarkofag,석관
-seminari,신학교
+seminari,세미나
 sensaci,센세이션
 sfinkter,괄약근
 silogism,삼단논법
@@ -4354,10 +4354,10 @@ tarantul,타란툴라
 teleskop,망원경
 teokrati,신정정치
 tipograf,식자공
-topograf,지지학자
+topograf,지형학자
 toreador,투우사
 transept,수랑
-tuberkul,결절
+tuberkul,결핵
 amfiteatr,원형경기장
 apopleksi,졸중
 arbitraci,중재
@@ -4378,15 +4378,15 @@ disciplin,규율
 disenteri,적리
 entomolog,곤충학자
 etnografi,민족지학
-filantrop,박애주의자
+filantrop,박애가
 fiziologi,생리학
 fizionomi,인상
 fotografi,사진술
 genealogi,족보학
 gladiator,검투사
 grafologi,필적학
-harmonium,리드오르간
-heksametr,육보격 시
+harmonium,하모늄
+heksametr,육보격
 heliotrop,헬리오트로프
 hidrofobi,공수병
 hieroglif,상형문자
@@ -4395,7 +4395,7 @@ hipopotam,하마
 homeopati,유사요법
 ideografi,표의문자법
 imperativ,명령법
-imperfekt,미완료(시제)
+imperfekt,미완료
 impresari,흥행주
 indikativ,직설법
 infanteri,보병대
@@ -4408,7 +4408,7 @@ karikatur,풍자화
 kartograf,지도제작자
 kastanjet,캐스터네츠
 katalepsi,강직증
-katastrof,재해
+katastrof,재난
 kateĥist,전도사
 kompromis,타협
 konduktor,차장
@@ -4416,16 +4416,16 @@ konkurenc,경쟁
 kontinent,대륙
 kontrabas,콘트라베이스
 konvolvul,메꽃
-kosmogoni,우주진화론
+kosmogoni,우주발생론
 kosmograf,우주학자
 krizantem,국화
 kronologi,연대학
 kronometr,크로노미터
 krucifiks,십자가상
 kvadratur,구적법
-litografi,석판인쇄
+litografi,석판술
 lokomobil,이동식 증기기관
-melankoli,우울(증)
+melankoli,우울
 metafizik,형이상학
 mikrometr,마이크로미터
 mikroskop,현미경
@@ -4437,7 +4437,7 @@ ornitolog,조류학자
 ostracism,도편추방
 paleograf,고문서학자
 palisandr,자단나무
-paroksism,발작 절정
+paroksism,발작
 pentametr,5보격시
 plutokrat,재벌
 politeism,다신교
@@ -4447,17 +4447,17 @@ purgatori,연옥
 recitativ,서창부
 reformaci,종교개혁
 rekrement,찌꺼기
-repertuar,레퍼토리 목록
+repertuar,레퍼토리
 rezignaci,체념
-sakrament,성례식
-sekundant,결투 증인
+sakrament,성례
+sekundant,증인
 skarlatin,성홍열
 skolastik,스콜라 철학
 somnambul,몽유병자
 sortiment,견본 세트
 spekulaci,투기
-spirit/ism##,심령술
-spirit/ist##,심령술사
+spirit/ism##,spirit/ism##
+spirit/ist##,spirit/ist##
 stalagmit,석순
 stalaktit,종유석
 statistik,통계
@@ -4468,16 +4468,16 @@ topografi,지형학
 velociped,자전거
 veterinar,수의사
 vivisekci,생체해부
-abiturient,졸업자
+abiturient,졸업생
 alternativ,대안
 anakronism,시대착오
 antropolog,인류학자
 arĥeologi,고고학
 arĥipelag,군도
 aristokrat,귀족
-arkitektur,건축술
+arkitektur,건축양식
 aŭtokrati,독재
-beletristik,미문학 연구
+beletristik,미문학
 bibliograf,서지학자
 civilizaci,문명
 dinamometr,동력계
@@ -4493,13 +4493,13 @@ koeficient,계수
 kompliment,칭찬
 kongregaci,교단
 konsistori,추기경회의
-kontraband,밀수입
-kontribuci,전쟁배상금
+kontraband,밀수
+kontribuci,기여금
 kosmografi,우주지리학
-kosmopolit,세계시민
+kosmopolit,세계인
 krestomati,문선집
-kvintesenc,제5원소
-manufaktur,대규모공장
+kvintesenc,진수
+manufaktur,제조공장
 manuskript,원고
 metamorfoz,변신
 meteorolog,기상학자
@@ -4516,12 +4516,12 @@ pseŭdonim,가명
 stenografi,속기
 subjunktiv,접속법
 superlativ,최상급
-tuberkuloz,결핵증
+tuberkuloz,결핵
 admiralitat,해군본부
 antropologi,인류학
 aristokrati,귀족정치
 bibliografi,서지학
-cirkumfleks,곡절 악센트
+cirkumfleks,곡절부호
 demonstraci,논증
 departement,부서
 enciklopedi,백과사전
@@ -4540,12 +4540,12 @@ metempsikoz,윤회
 meteorologi,기상학
 observatori,관측소
 paleontolog,고생물학자
-pleŭronekt,가자미류
+pleŭronekt,가자미
 protagonist,주인공
-protektorat,보호령
+protektorat,보호국
 pseŭd,가짜
-racional/ism##,합리주의
-racional/ist##,합리주의자
+racional/ism##,racional/ism##
+racional/ist##,racional/ist##
 reŭmatism,류머티즘
 temperament,기질
 tragikomedi,희비극
@@ -4555,170 +4555,170 @@ konservatori,음악학교
 paleontologi,고생물학
 paralelogram,평행사변형
 spiritualism,유심론
-spiritualist,유심론자
+spiritualist,심령론자
 trigonometri,삼각법
 aŭtobiografi,자서전
 t.e.,즉
 k.t.p.,등등
-kiom,몇 번째
-kiom##,몇번째
-kiom##,몇번째
+kiom,"몇 번째, 얼마만큼"
+kiom##,kiom##
+kiom##,kiom##
 dum,동안
-dum##,동안
+dum##,dum##
 ĝis,까지
-ĝis##,까지
+ĝis##,ĝis##
 anstataŭ,대신에
-anstataŭ##,대신에
-kiu##,누구
-kiu,"누구,어느"
-tiu##,사람
-tiu,"그 사람,그것"
-ĉiu,각각의
-ĉiu##,각각
+anstataŭ##,anstataŭ##
+kiu##,kiu##
+kiu,누구
+tiu##,tiu##
+tiu,그것
+ĉiu,각~
+ĉiu##,ĉiu##
 neniu,아무도
-neniu##,아무도
+neniu##,neniu##
 ambaŭ,양쪽의
-ambaŭ##,양쪽
-tiu ĉi##,이
-tiu ĉi##,이것
+ambaŭ##,ambaŭ##
+tiu ĉi##,tiu ĉi##
+tiu ĉi##,tiu ĉi##
 fiks,고정된
-fiks##,고정하다
+fiks##,fiks##
 fals,거짓의
-fals##,위조하다
-ĉu##,인지
-ĉu,입니까?
+fals##,fals##
+ĉu##,ĉu##
+ĉu,~입니까?
 kial,왜
-kial##,왜
-kiel,"어떻게,~처럼"
-kiel##,어떻게
+kial##,kial##
+kiel,어떻게
+kiel##,kiel##
 tamen,그래도
-tamen##,그래도
+tamen##,tamen##
 apenaŭ,하자마자
-apenaŭ##,하자마자
+apenaŭ##,apenaŭ##
 kvazaŭ,마치
-kvazaŭ##,마치
+kvazaŭ##,kvazaŭ##
 ĉirkaŭ,주위에
-ĉirkaŭ##,주위
-precip##,주요한
+ĉirkaŭ##,ĉirkaŭ##
+precip##,precip##
 precip,주로
 tut,전체의
-tut##,전혀
-rest##,남다
+tut##,tut##
+rest##,rest##
 rest,나머지
 ĉiel,여러모로
-ĉiel##,하늘
-interes,관심을 끌다
-interes##,흥미
-lig,묶다
-lig##,묶다
-rul,"굴리다,말다"
-rul##,두루마리
-arm##,무기
+ĉiel##,ĉiel##
+interes,관심 끌다
+interes##,interes##
+lig,"묶다, 결합하다"
+lig##,lig##
+rul,굴리다
+rul##,rul##
+arm##,arm##
 arm,무기
 fos,파다
-fos##,구멍
+fos##,fos##
 plant,심다
-plant##,식물
-orient##,방위결정
+plant##,plant##
+orient##,orient##
 orient,동쪽
 fald,접다
-fald##,접힘
+fald##,fald##
 kaj,그리고
-kaj##,승강장
-amas,"무리,집단"
-amas##,집적
+kaj##,kaj##
+amas,무리
+amas##,amas##
 kopi,복사하다
-kopi##,복사
+kopi##,kopi##
 fotograf,촬영하다
-fotograf##,사진사
-ĉar,왜냐하면
-ĉar##,그래서
-fikci##,가공
+fotograf##,fotograf##
+ĉar,때문에
+ĉar##,ĉar##
+fikci##,fikci##
 fikci,허구
-nul,영(零)
-nul##,영
-klar##,클라라
+nul,영
+nul##,nul##
+klar##,klar##
 klar,명확한
-artikol,"관사,기사,조항"
-artikol##,기사
+artikol,기사
+artikol##,artikol##
 aŭgust,8월
-aŭgust##,아우구스토
+aŭgust##,aŭgust##
 por,위해
-por##,구멍
+por##,por##
 opozici,반대하다
-opozici##,반대
+opozici##,opozici##
 fot,사진
 vibr,진동하다
 oscil,진동하다
 fluktu,변동하다
-indigo,"인디고,남색"
-ad##,계속
-ad,계속행위
+indigo,인디고
+ad##,ad##
+ad,지속
 ag,행동하다
-al,~으로
+al,~로
 am,사랑하다
-an,구성원
+an,회원
 ar,무리
-as,현재형
-at,수동현재
+as,현재
+at,받고 있는
 av,조부
 bo,혼인관계
 ci,너
 da,의
-de,"로부터,의"
+de,"~의, ~로부터"
 di,신
-Di##,신
+Di##,Di##
 do,그래서
-du,둘(2)
+du,둘
 ec,성질
-eg,크고 강렬
+eg,강렬
 ej,장소
 ek,시작
-el,~에서부터
+el,"에서, 로부터"
 em,경향
 en,안에
 er,입자
 et,작은
 fe,요정
-fi##,쳇!
+fi##,fi##
 fi,비열한
 ge,남녀
-ha,놀람
+ha,하!
 he,이봐!
 ho,오!
-ia,어떤
-id,후손
+ia,일종의
+id,자손
 ie,어딘가에
 ig,하게 하다
 il,도구
-in,녀성
-io,무언가
+in,여성
+io,무엇인가
 ir,가다
-is,과거형
-it,수동 과거
-iu##,어떤
+is,였
+it,염증
+iu##,iu##
 iu,누군가
-ja,정말로
-je,(~)에
+ja,정말
+je,에
 ju,더욱
-ke,~라는 것
-l',정관사
+ke,라는 것
+l',정冠사
 la,정관사
 li,그
 lu,임차하다
 mi,나
 ne,아니
 ni,우리
-nj,여자애칭
+nj,여성애칭
 nu,자
 od,송시
-ok,여덟(8)
+ok,여덟
 ol,보다
 on,분수
 op,집합수
 or,금
 os,미래형
-ot,수동미래
+ot,받을
 ov,알
 pi,경건한
 po,씩
@@ -4727,12 +4727,12 @@ se,만약
 si,자기
 te,차
 uj,그릇
-ul,인
-um,불특정
-ur,유럽들소
-us,가정법
+ul,사람
+um,없음
+ur,들소
+us,가정법 어미
 uz,쓰다
 ve,아아!
 vi,당신
-homeopat,유사요법사
+homeopat,동종요법사
 zoolog,동물학
